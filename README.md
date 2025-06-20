@@ -79,6 +79,10 @@ Prije pokretanja aplikacije potrebno je imati instalirano:
 
 Za sva pitanja ili podršku, kontaktirajte članove tima:
 
-- **Adna Nuspahić** 
-- **Dženana Selimović**   
-- **Ilma Džaferović**  
+- **Adna Nuspahić - anuspahic1@etf.unsa.ba** 
+- **Dženana Selimović - dselimovic2@etf.unsa.ba**   
+- **Ilma Džaferović - idzaferovi1@etf.unsa.ba**
+
+## Link na video:
+https://drive.google.com/drive/folders/1PhzNs-mVeUpZzFSSrs3OxUTwMsUuBDqh?usp=drive_link
+
