@@ -1,0 +1,121 @@
+server:
+  port: 8081
+
+spring:
+  application:
+    name: api-gateway
+
+  cloud:
+    client:
+      hostname: localhost
+    inetutils:
+      ignored-interfaces: [ ".*" ]
+      preferred-networks: [ "127.0.0.1" ]
+    gateway:
+      forwarded-headers-strategy: native
+      discovery:
+        locator:
+          enabled: true
+          lower-case-service-id: true
+      routes:
+        - id: auth-service-public-routes
+          uri: lb://LOGIN-REGISTRACIJA-APLIKACIJA
+          predicates:
+            - Path=/auth/login,/auth/register,/auth/forgot-password-request,/auth/reset-password,/auth/contact
+            - Method=POST,GET
+          filters:
+            - PreserveHostHeader
+        - id: openapi-routes
+          uri: lb://LOGIN-REGISTRACIJA-APLIKACIJA
+          predicates:
+            - Path=/v3/api-docs/**,/swagger-ui/**
+          filters:
+            - PreserveHostHeader
+        - id: public-doctors-list
+          uri: lb://KORISNICI-DOKTORI
+          predicates:
+            - Path=/api/korisnici-doktori/api/doktori
+            - Method=GET
+          filters:
+            - RewritePath=/api/korisnici-doktori(?<segment>.*), /korisnici-doktori$\{segment}
+            - PreserveHostHeader
+          order: -50
+        - id: public-doctor-details
+          uri: lb://KORISNICI-DOKTORI
+          predicates:
+            - Path=/api/korisnici-doktori/api/doktori/{id}
+            - Method=GET
+          filters:
+            - RewritePath=/api/korisnici-doktori(?<segment>.*), /korisnici-doktori$\{segment}
+            - PreserveHostHeader
+          order: -49
+        - id: auth-service-protected-routes
+          uri: lb://LOGIN-REGISTRACIJA-APLIKACIJA
+          predicates:
+            - Path=/auth/**
+          filters:
+            - AuthFilter
+            - RewritePath=/auth(?<segment>.*), /auth${segment}
+        - id: korisnici-doktori
+          uri: lb://KORISNICI-DOKTORI
+          predicates:
+            - Path=/api/korisnici-doktori/**
+          filters:
+            - RewritePath=/api/korisnici-doktori(?<segment>.*), /korisnici-doktori$\{segment}
+            - PreserveHostHeader
+            - AuthFilter
+        - id: termini-pregledi
+          uri: lb://TERMINI-PREGLEDI
+          predicates:
+            - Path=/api/termini-pregledi/**
+          filters:
+            - RewritePath=/api/termini-pregledi(?<segment>.*), /termini-pregledi$\{segment}
+            - AuthFilter
+        - id: obavijesti-dokumentacija
+          uri: lb://OBAVIJESTI-DOKUMENTACIJA
+          predicates:
+            - Path=/api/obavijesti-dokumentacija/**
+          filters:
+            - RewritePath=/api/obavijesti-dokumentacija(?<segment>.*), /obavijesti-dokumentacija$\{segment}
+            - AuthFilter
+
+    loadbalancer:
+      ribbon:
+        enabled: false
+      client:
+        default:
+          use-zone-affinity: false
+          prefer-ip-address: true
+
+  eureka:
+    client:
+      serviceUrl:
+        defaultZone: http://localhost:8761/eureka/
+      register-with-eureka: true
+      fetch-registry: true
+      healthcheck:
+        enabled: true
+    instance:
+      prefer-ip-address: true
+      ip-address: 127.0.0.1
+      instance-id: ${spring.application.name}:${eureka.instance.ip-address}:${server.port}
+      hostname: localhost
+      lease-renewal-interval-in-seconds: 10
+      lease-expiration-duration-in-seconds: 30
+      metadataMap:
+        context-path: /api
+      healthCheckUrlPath: /actuator/health
+      statusPageUrlPath: /actuator/info
+
+application:
+  security:
+    jwt:
+      secret-key: ajy+bmnRSy1+SuXXIY+kwLj/Nq7Z7QKPZBBN8Tl6XMzjZm2v3++Yvdd8CA83TBLA1lbeVSGR7eysm6tFg3/TVA==
+
+logging:
+  level:
+    org.springframework.cloud.gateway: DEBUG
+    org.springframework.security: DEBUG
+    com.netflix: DEBUG
+    reactor: DEBUG
+    root: INFO

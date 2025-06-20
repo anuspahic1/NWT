@@ -1,0 +1,14 @@
+# korisnici-doktori/src/main/resources/bootstrap.yml
+
+spring:
+  application:
+    name: obavijesti-dokumentacija # Ovo je SERVICE ID koji će se koristiti u Eureki
+  cloud:
+    config:
+      uri: http://localhost:8888 # URI vašeg Config Servera (ako ga koristite)
+      # label: main
+      # profile: ${SPRING_PROFILES_ACTIVE:default}
+    eureka:
+      client:
+        serviceUrl:
+          defaultZone: http://localhost:8761/eureka/ # URI vašeg Eureka Servera

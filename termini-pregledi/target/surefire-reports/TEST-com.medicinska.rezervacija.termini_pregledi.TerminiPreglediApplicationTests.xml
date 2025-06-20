@@ -1,0 +1,1019 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report-3.0.xsd" version="3.0" name="com.medicinska.rezervacija.termini_pregledi.TerminiPreglediApplicationTests" time="22.358" tests="1" errors="0" skipped="0" failures="0">
+  <properties>
+    <property name="java.specification.version" value="21"/>
+    <property name="sun.cpu.isalist" value="amd64"/>
+    <property name="sun.jnu.encoding" value="Cp1252"/>
+    <property name="java.class.path" value="C:\Users\Adna\Downloads\termini-pregledi\termini-pregledi\target\test-classes;C:\Users\Adna\Downloads\termini-pregledi\termini-pregledi\target\classes;C:\Users\Adna\.m2\repository\org\springframework\boot\spring-boot-starter-data-jpa\3.2.5\spring-boot-starter-data-jpa-3.2.5.jar;C:\Users\Adna\.m2\repository\org\springframework\boot\spring-boot-starter-aop\3.2.5\spring-boot-starter-aop-3.2.5.jar;C:\Users\Adna\.m2\repository\org\springframework\spring-aop\6.1.6\spring-aop-6.1.6.jar;C:\Users\Adna\.m2\repository\org\aspectj\aspectjweaver\1.9.22\aspectjweaver-1.9.22.jar;C:\Users\Adna\.m2\repository\org\hibernate\orm\hibernate-core\6.4.4.Final\hibernate-core-6.4.4.Final.jar;C:\Users\Adna\.m2\repository\jakarta\persistence\jakarta.persistence-api\3.1.0\jakarta.persistence-api-3.1.0.jar;C:\Users\Adna\.m2\repository\jakarta\transaction\jakarta.transaction-api\2.0.1\jakarta.transaction-api-2.0.1.jar;C:\Users\Adna\.m2\repository\org\hibernate\common\hibernate-commons-annotations\6.0.6.Final\hibernate-commons-annotations-6.0.6.Final.jar;C:\Users\Adna\.m2\repository\io\smallrye\jandex\3.1.2\jandex-3.1.2.jar;C:\Users\Adna\.m2\repository\net\bytebuddy\byte-buddy\1.14.13\byte-buddy-1.14.13.jar;C:\Users\Adna\.m2\repository\org\glassfish\jaxb\jaxb-runtime\4.0.5\jaxb-runtime-4.0.5.jar;C:\Users\Adna\.m2\repository\org\glassfish\jaxb\jaxb-core\4.0.5\jaxb-core-4.0.5.jar;C:\Users\Adna\.m2\repository\org\eclipse\angus\angus-activation\2.0.2\angus-activation-2.0.2.jar;C:\Users\Adna\.m2\repository\org\glassfish\jaxb\txw2\4.0.5\txw2-4.0.5.jar;C:\Users\Adna\.m2\repository\com\sun\istack\istack-commons-runtime\4.1.2\istack-commons-runtime-4.1.2.jar;C:\Users\Adna\.m2\repository\jakarta\inject\jakarta.inject-api\2.0.1\jakarta.inject-api-2.0.1.jar;C:\Users\Adna\.m2\repository\org\antlr\antlr4-runtime\4.13.0\antlr4-runtime-4.13.0.jar;C:\Users\Adna\.m2\repository\org\springframework\data\spring-data-jpa\3.2.5\spring-data-jpa-3.2.5.jar;C:\Users\Adna\.m2\repository\org\springframework\data\spring-data-commons\3.2.5\spring-data-commons-3.2.5.jar;C:\Users\Adna\.m2\repository\org\springframework\spring-orm\6.1.6\spring-orm-6.1.6.jar;C:\Users\Adna\.m2\repository\org\springframework\spring-context\6.1.6\spring-context-6.1.6.jar;C:\Users\Adna\.m2\repository\org\springframework\spring-tx\6.1.6\spring-tx-6.1.6.jar;C:\Users\Adna\.m2\repository\org\springframework\spring-beans\6.1.6\spring-beans-6.1.6.jar;C:\Users\Adna\.m2\repository\jakarta\annotation\jakarta.annotation-api\2.1.1\jakarta.annotation-api-2.1.1.jar;C:\Users\Adna\.m2\repository\org\slf4j\slf4j-api\2.0.13\slf4j-api-2.0.13.jar;C:\Users\Adna\.m2\repository\org\springframework\spring-aspects\6.1.6\spring-aspects-6.1.6.jar;C:\Users\Adna\.m2\repository\org\springframework\boot\spring-boot-starter-web\3.2.5\spring-boot-starter-web-3.2.5.jar;C:\Users\Adna\.m2\repository\org\springframework\boot\spring-boot-starter\3.2.5\spring-boot-starter-3.2.5.jar;C:\Users\Adna\.m2\repository\org\springframework\boot\spring-boot-starter-logging\3.2.5\spring-boot-starter-logging-3.2.5.jar;C:\Users\Adna\.m2\repository\ch\qos\logback\logback-classic\1.4.14\logback-classic-1.4.14.jar;C:\Users\Adna\.m2\repository\ch\qos\logback\logback-core\1.4.14\logback-core-1.4.14.jar;C:\Users\Adna\.m2\repository\org\apache\logging\log4j\log4j-to-slf4j\2.21.1\log4j-to-slf4j-2.21.1.jar;C:\Users\Adna\.m2\repository\org\apache\logging\log4j\log4j-api\2.21.1\log4j-api-2.21.1.jar;C:\Users\Adna\.m2\repository\org\slf4j\jul-to-slf4j\2.0.13\jul-to-slf4j-2.0.13.jar;C:\Users\Adna\.m2\repository\org\yaml\snakeyaml\2.2\snakeyaml-2.2.jar;C:\Users\Adna\.m2\repository\org\springframework\boot\spring-boot-starter-json\3.2.5\spring-boot-starter-json-3.2.5.jar;C:\Users\Adna\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jdk8\2.15.4\jackson-datatype-jdk8-2.15.4.jar;C:\Users\Adna\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.15.4\jackson-datatype-jsr310-2.15.4.jar;C:\Users\Adna\.m2\repository\com\fasterxml\jackson\module\jackson-module-parameter-names\2.15.4\jackson-module-parameter-names-2.15.4.jar;C:\Users\Adna\.m2\repository\org\springframework\boot\spring-boot-starter-tomcat\3.2.5\spring-boot-starter-tomcat-3.2.5.jar;C:\Users\Adna\.m2\repository\org\apache\tomcat\embed\tomcat-embed-core\10.1.20\tomcat-embed-core-10.1.20.jar;C:\Users\Adna\.m2\repository\org\apache\tomcat\embed\tomcat-embed-websocket\10.1.20\tomcat-embed-websocket-10.1.20.jar;C:\Users\Adna\.m2\repository\org\springframework\spring-web\6.1.6\spring-web-6.1.6.jar;C:\Users\Adna\.m2\repository\org\springframework\spring-webmvc\6.1.6\spring-webmvc-6.1.6.jar;C:\Users\Adna\.m2\repository\org\springframework\spring-expression\6.1.6\spring-expression-6.1.6.jar;C:\Users\Adna\.m2\repository\org\springframework\cloud\spring-cloud-starter-loadbalancer\4.1.2\spring-cloud-starter-loadbalancer-4.1.2.jar;C:\Users\Adna\.m2\repository\org\springframework\cloud\spring-cloud-starter\4.1.2\spring-cloud-starter-4.1.2.jar;C:\Users\Adna\.m2\repository\org\springframework\cloud\spring-cloud-context\4.1.2\spring-cloud-context-4.1.2.jar;C:\Users\Adna\.m2\repository\org\springframework\security\spring-security-rsa\1.1.2\spring-security-rsa-1.1.2.jar;C:\Users\Adna\.m2\repository\org\bouncycastle\bcprov-jdk18on\1.77\bcprov-jdk18on-1.77.jar;C:\Users\Adna\.m2\repository\org\springframework\cloud\spring-cloud-loadbalancer\4.1.2\spring-cloud-loadbalancer-4.1.2.jar;C:\Users\Adna\.m2\repository\io\projectreactor\reactor-core\3.6.5\reactor-core-3.6.5.jar;C:\Users\Adna\.m2\repository\org\reactivestreams\reactive-streams\1.0.4\reactive-streams-1.0.4.jar;C:\Users\Adna\.m2\repository\io\projectreactor\addons\reactor-extra\3.5.1\reactor-extra-3.5.1.jar;C:\Users\Adna\.m2\repository\org\springframework\boot\spring-boot-starter-cache\3.2.5\spring-boot-starter-cache-3.2.5.jar;C:\Users\Adna\.m2\repository\org\springframework\spring-context-support\6.1.6\spring-context-support-6.1.6.jar;C:\Users\Adna\.m2\repository\com\stoyanr\evictor\1.0.0\evictor-1.0.0.jar;C:\Users\Adna\.m2\repository\org\springframework\boot\spring-boot-devtools\3.2.5\spring-boot-devtools-3.2.5.jar;C:\Users\Adna\.m2\repository\org\springframework\boot\spring-boot\3.2.5\spring-boot-3.2.5.jar;C:\Users\Adna\.m2\repository\org\springframework\boot\spring-boot-autoconfigure\3.2.5\spring-boot-autoconfigure-3.2.5.jar;C:\Users\Adna\.m2\repository\com\mysql\mysql-connector-j\8.0.33\mysql-connector-j-8.0.33.jar;C:\Users\Adna\.m2\repository\org\springframework\boot\spring-boot-starter-test\3.2.5\spring-boot-starter-test-3.2.5.jar;C:\Users\Adna\.m2\repository\org\springframework\boot\spring-boot-test\3.2.5\spring-boot-test-3.2.5.jar;C:\Users\Adna\.m2\repository\org\springframework\boot\spring-boot-test-autoconfigure\3.2.5\spring-boot-test-autoconfigure-3.2.5.jar;C:\Users\Adna\.m2\repository\com\jayway\jsonpath\json-path\2.9.0\json-path-2.9.0.jar;C:\Users\Adna\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\4.0.2\jakarta.xml.bind-api-4.0.2.jar;C:\Users\Adna\.m2\repository\jakarta\activation\jakarta.activation-api\2.1.3\jakarta.activation-api-2.1.3.jar;C:\Users\Adna\.m2\repository\net\minidev\json-smart\2.5.1\json-smart-2.5.1.jar;C:\Users\Adna\.m2\repository\net\minidev\accessors-smart\2.5.1\accessors-smart-2.5.1.jar;C:\Users\Adna\.m2\repository\org\ow2\asm\asm\9.6\asm-9.6.jar;C:\Users\Adna\.m2\repository\org\assertj\assertj-core\3.24.2\assertj-core-3.24.2.jar;C:\Users\Adna\.m2\repository\org\awaitility\awaitility\4.2.1\awaitility-4.2.1.jar;C:\Users\Adna\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\Adna\.m2\repository\org\junit\jupiter\junit-jupiter\5.10.2\junit-jupiter-5.10.2.jar;C:\Users\Adna\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.2\junit-jupiter-api-5.10.2.jar;C:\Users\Adna\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\Adna\.m2\repository\org\junit\platform\junit-platform-commons\1.10.2\junit-platform-commons-1.10.2.jar;C:\Users\Adna\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\Adna\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.10.2\junit-jupiter-params-5.10.2.jar;C:\Users\Adna\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.2\junit-jupiter-engine-5.10.2.jar;C:\Users\Adna\.m2\repository\org\junit\platform\junit-platform-engine\1.10.2\junit-platform-engine-1.10.2.jar;C:\Users\Adna\.m2\repository\org\mockito\mockito-core\5.7.0\mockito-core-5.7.0.jar;C:\Users\Adna\.m2\repository\net\bytebuddy\byte-buddy-agent\1.14.13\byte-buddy-agent-1.14.13.jar;C:\Users\Adna\.m2\repository\org\objenesis\objenesis\3.3\objenesis-3.3.jar;C:\Users\Adna\.m2\repository\org\mockito\mockito-junit-jupiter\5.7.0\mockito-junit-jupiter-5.7.0.jar;C:\Users\Adna\.m2\repository\org\skyscreamer\jsonassert\1.5.1\jsonassert-1.5.1.jar;C:\Users\Adna\.m2\repository\com\vaadin\external\google\android-json\0.0.20131108.vaadin1\android-json-0.0.20131108.vaadin1.jar;C:\Users\Adna\.m2\repository\org\springframework\spring-core\6.1.6\spring-core-6.1.6.jar;C:\Users\Adna\.m2\repository\org\springframework\spring-jcl\6.1.6\spring-jcl-6.1.6.jar;C:\Users\Adna\.m2\repository\org\springframework\spring-test\6.1.6\spring-test-6.1.6.jar;C:\Users\Adna\.m2\repository\org\xmlunit\xmlunit-core\2.9.1\xmlunit-core-2.9.1.jar;C:\Users\Adna\.m2\repository\org\springframework\security\spring-security-test\6.2.4\spring-security-test-6.2.4.jar;C:\Users\Adna\.m2\repository\org\springframework\security\spring-security-core\6.2.4\spring-security-core-6.2.4.jar;C:\Users\Adna\.m2\repository\org\springframework\security\spring-security-crypto\6.2.4\spring-security-crypto-6.2.4.jar;C:\Users\Adna\.m2\repository\org\springframework\security\spring-security-web\6.2.4\spring-security-web-6.2.4.jar;C:\Users\Adna\.m2\repository\org\springframework\boot\spring-boot-starter-jdbc\3.2.5\spring-boot-starter-jdbc-3.2.5.jar;C:\Users\Adna\.m2\repository\com\zaxxer\HikariCP\5.0.1\HikariCP-5.0.1.jar;C:\Users\Adna\.m2\repository\org\springframework\spring-jdbc\6.1.6\spring-jdbc-6.1.6.jar;C:\Users\Adna\.m2\repository\org\springframework\boot\spring-boot-starter-validation\3.2.5\spring-boot-starter-validation-3.2.5.jar;C:\Users\Adna\.m2\repository\org\apache\tomcat\embed\tomcat-embed-el\10.1.20\tomcat-embed-el-10.1.20.jar;C:\Users\Adna\.m2\repository\com\github\fge\json-patch\1.9\json-patch-1.9.jar;C:\Users\Adna\.m2\repository\com\github\fge\jackson-coreutils\1.6\jackson-coreutils-1.6.jar;C:\Users\Adna\.m2\repository\com\github\fge\msg-simple\1.1\msg-simple-1.1.jar;C:\Users\Adna\.m2\repository\com\github\fge\btf\1.2\btf-1.2.jar;C:\Users\Adna\.m2\repository\com\google\guava\guava\16.0.1\guava-16.0.1.jar;C:\Users\Adna\.m2\repository\com\google\code\findbugs\jsr305\2.0.1\jsr305-2.0.1.jar;C:\Users\Adna\.m2\repository\org\springdoc\springdoc-openapi-starter-webmvc-ui\2.6.0\springdoc-openapi-starter-webmvc-ui-2.6.0.jar;C:\Users\Adna\.m2\repository\org\springdoc\springdoc-openapi-starter-webmvc-api\2.6.0\springdoc-openapi-starter-webmvc-api-2.6.0.jar;C:\Users\Adna\.m2\repository\org\springdoc\springdoc-openapi-starter-common\2.6.0\springdoc-openapi-starter-common-2.6.0.jar;C:\Users\Adna\.m2\repository\io\swagger\core\v3\swagger-core-jakarta\2.2.22\swagger-core-jakarta-2.2.22.jar;C:\Users\Adna\.m2\repository\org\apache\commons\commons-lang3\3.13.0\commons-lang3-3.13.0.jar;C:\Users\Adna\.m2\repository\io\swagger\core\v3\swagger-annotations-jakarta\2.2.22\swagger-annotations-jakarta-2.2.22.jar;C:\Users\Adna\.m2\repository\io\swagger\core\v3\swagger-models-jakarta\2.2.22\swagger-models-jakarta-2.2.22.jar;C:\Users\Adna\.m2\repository\com\fasterxml\jackson\dataformat\jackson-dataformat-yaml\2.15.4\jackson-dataformat-yaml-2.15.4.jar;C:\Users\Adna\.m2\repository\org\webjars\swagger-ui\5.17.14\swagger-ui-5.17.14.jar;C:\Users\Adna\.m2\repository\org\projectlombok\lombok\1.18.30\lombok-1.18.30.jar;C:\Users\Adna\.m2\repository\org\hibernate\validator\hibernate-validator\8.0.1.Final\hibernate-validator-8.0.1.Final.jar;C:\Users\Adna\.m2\repository\jakarta\validation\jakarta.validation-api\3.0.2\jakarta.validation-api-3.0.2.jar;C:\Users\Adna\.m2\repository\org\jboss\logging\jboss-logging\3.5.3.Final\jboss-logging-3.5.3.Final.jar;C:\Users\Adna\.m2\repository\com\fasterxml\classmate\1.6.0\classmate-1.6.0.jar;C:\Users\Adna\.m2\repository\org\modelmapper\extensions\modelmapper-spring\3.0.0\modelmapper-spring-3.0.0.jar;C:\Users\Adna\.m2\repository\org\modelmapper\modelmapper\3.0.0\modelmapper-3.0.0.jar;C:\Users\Adna\.m2\repository\io\jsonwebtoken\jjwt-api\0.11.5\jjwt-api-0.11.5.jar;C:\Users\Adna\.m2\repository\io\jsonwebtoken\jjwt-impl\0.11.5\jjwt-impl-0.11.5.jar;C:\Users\Adna\.m2\repository\io\jsonwebtoken\jjwt-jackson\0.11.5\jjwt-jackson-0.11.5.jar;C:\Users\Adna\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.15.4\jackson-databind-2.15.4.jar;C:\Users\Adna\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.15.4\jackson-annotations-2.15.4.jar;C:\Users\Adna\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.15.4\jackson-core-2.15.4.jar;C:\Users\Adna\.m2\repository\org\springframework\cloud\spring-cloud-starter-netflix-eureka-client\4.1.1\spring-cloud-starter-netflix-eureka-client-4.1.1.jar;C:\Users\Adna\.m2\repository\org\springframework\cloud\spring-cloud-netflix-eureka-client\4.1.1\spring-cloud-netflix-eureka-client-4.1.1.jar;C:\Users\Adna\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.2.3\httpclient5-5.2.3.jar;C:\Users\Adna\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.2.4\httpcore5-5.2.4.jar;C:\Users\Adna\.m2\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.2.4\httpcore5-h2-5.2.4.jar;C:\Users\Adna\.m2\repository\com\netflix\eureka\eureka-client\2.0.2\eureka-client-2.0.2.jar;C:\Users\Adna\.m2\repository\com\netflix\netflix-commons\netflix-eventbus\0.3.0\netflix-eventbus-0.3.0.jar;C:\Users\Adna\.m2\repository\com\netflix\netflix-commons\netflix-infix\0.3.0\netflix-infix-0.3.0.jar;C:\Users\Adna\.m2\repository\commons-jxpath\commons-jxpath\1.3\commons-jxpath-1.3.jar;C:\Users\Adna\.m2\repository\joda-time\joda-time\2.3\joda-time-2.3.jar;C:\Users\Adna\.m2\repository\org\antlr\antlr-runtime\3.4\antlr-runtime-3.4.jar;C:\Users\Adna\.m2\repository\org\antlr\stringtemplate\3.2.1\stringtemplate-3.2.1.jar;C:\Users\Adna\.m2\repository\antlr\antlr\2.7.7\antlr-2.7.7.jar;C:\Users\Adna\.m2\repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar;C:\Users\Adna\.m2\repository\org\apache\commons\commons-math\2.2\commons-math-2.2.jar;C:\Users\Adna\.m2\repository\com\thoughtworks\xstream\xstream\1.4.19\xstream-1.4.19.jar;C:\Users\Adna\.m2\repository\io\github\x-stream\mxparser\1.2.2\mxparser-1.2.2.jar;C:\Users\Adna\.m2\repository\xmlpull\xmlpull\1.1.3.1\xmlpull-1.1.3.1.jar;C:\Users\Adna\.m2\repository\jakarta\ws\rs\jakarta.ws.rs-api\3.1.0\jakarta.ws.rs-api-3.1.0.jar;C:\Users\Adna\.m2\repository\com\netflix\servo\servo-core\0.12.21\servo-core-0.12.21.jar;C:\Users\Adna\.m2\repository\commons-configuration\commons-configuration\1.10\commons-configuration-1.10.jar;C:\Users\Adna\.m2\repository\commons-lang\commons-lang\2.6\commons-lang-2.6.jar;C:\Users\Adna\.m2\repository\org\codehaus\jettison\jettison\1.5.4\jettison-1.5.4.jar;C:\Users\Adna\.m2\repository\com\netflix\eureka\eureka-core\2.0.2\eureka-core-2.0.2.jar;C:\Users\Adna\.m2\repository\com\fasterxml\woodstox\woodstox-core\6.2.1\woodstox-core-6.2.1.jar;C:\Users\Adna\.m2\repository\org\codehaus\woodstox\stax2-api\4.2.1\stax2-api-4.2.1.jar;C:\Users\Adna\.m2\repository\org\springframework\boot\spring-boot-starter-actuator\3.2.5\spring-boot-starter-actuator-3.2.5.jar;C:\Users\Adna\.m2\repository\org\springframework\boot\spring-boot-actuator-autoconfigure\3.2.5\spring-boot-actuator-autoconfigure-3.2.5.jar;C:\Users\Adna\.m2\repository\org\springframework\boot\spring-boot-actuator\3.2.5\spring-boot-actuator-3.2.5.jar;C:\Users\Adna\.m2\repository\io\micrometer\micrometer-observation\1.12.5\micrometer-observation-1.12.5.jar;C:\Users\Adna\.m2\repository\io\micrometer\micrometer-commons\1.12.5\micrometer-commons-1.12.5.jar;C:\Users\Adna\.m2\repository\io\micrometer\micrometer-jakarta9\1.12.5\micrometer-jakarta9-1.12.5.jar;C:\Users\Adna\.m2\repository\io\micrometer\micrometer-core\1.12.5\micrometer-core-1.12.5.jar;C:\Users\Adna\.m2\repository\org\hdrhistogram\HdrHistogram\2.1.12\HdrHistogram-2.1.12.jar;C:\Users\Adna\.m2\repository\org\latencyutils\LatencyUtils\2.0.3\LatencyUtils-2.0.3.jar;C:\Users\Adna\.m2\repository\org\springframework\cloud\spring-cloud-starter-openfeign\4.1.1\spring-cloud-starter-openfeign-4.1.1.jar;C:\Users\Adna\.m2\repository\org\springframework\cloud\spring-cloud-openfeign-core\4.1.1\spring-cloud-openfeign-core-4.1.1.jar;C:\Users\Adna\.m2\repository\io\github\openfeign\form\feign-form-spring\3.8.0\feign-form-spring-3.8.0.jar;C:\Users\Adna\.m2\repository\io\github\openfeign\form\feign-form\3.8.0\feign-form-3.8.0.jar;C:\Users\Adna\.m2\repository\commons-fileupload\commons-fileupload\1.5\commons-fileupload-1.5.jar;C:\Users\Adna\.m2\repository\commons-io\commons-io\2.11.0\commons-io-2.11.0.jar;C:\Users\Adna\.m2\repository\org\springframework\cloud\spring-cloud-commons\4.1.2\spring-cloud-commons-4.1.2.jar;C:\Users\Adna\.m2\repository\io\github\openfeign\feign-core\13.2.1\feign-core-13.2.1.jar;C:\Users\Adna\.m2\repository\io\github\openfeign\feign-slf4j\13.2.1\feign-slf4j-13.2.1.jar;C:\Users\Adna\.m2\repository\io\github\openfeign\feign-httpclient\12.1\feign-httpclient-12.1.jar;C:\Users\Adna\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\Adna\.m2\repository\org\apache\httpcomponents\httpcore\4.4.16\httpcore-4.4.16.jar;C:\Users\Adna\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\Adna\.m2\repository\commons-codec\commons-codec\1.16.1\commons-codec-1.16.1.jar;C:\Users\Adna\.m2\repository\com\h2database\h2\2.2.224\h2-2.2.224.jar;"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="user.variant" value=""/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="Europe/Sarajevo"/>
+    <property name="org.jboss.logging.provider" value="slf4j"/>
+    <property name="user.country.format" value="BA"/>
+    <property name="os.name" value="Windows 11"/>
+    <property name="java.vm.specification.version" value="21"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="GB"/>
+    <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-21\bin"/>
+    <property name="sun.java.command" value="C:\Users\Adna\AppData\Local\Temp\surefire6540002933622175600\surefirebooter-20250620035601583_3.jar C:\Users\Adna\AppData\Local\Temp\surefire6540002933622175600 2025-06-20T03-56-01_300-jvmRun1 surefire-20250620035601583_1tmp surefire_0-20250620035601583_2tmp"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="C:\Users\Adna\Downloads\termini-pregledi\termini-pregledi\target\test-classes;C:\Users\Adna\Downloads\termini-pregledi\termini-pregledi\target\classes;C:\Users\Adna\.m2\repository\org\springframework\boot\spring-boot-starter-data-jpa\3.2.5\spring-boot-starter-data-jpa-3.2.5.jar;C:\Users\Adna\.m2\repository\org\springframework\boot\spring-boot-starter-aop\3.2.5\spring-boot-starter-aop-3.2.5.jar;C:\Users\Adna\.m2\repository\org\springframework\spring-aop\6.1.6\spring-aop-6.1.6.jar;C:\Users\Adna\.m2\repository\org\aspectj\aspectjweaver\1.9.22\aspectjweaver-1.9.22.jar;C:\Users\Adna\.m2\repository\org\hibernate\orm\hibernate-core\6.4.4.Final\hibernate-core-6.4.4.Final.jar;C:\Users\Adna\.m2\repository\jakarta\persistence\jakarta.persistence-api\3.1.0\jakarta.persistence-api-3.1.0.jar;C:\Users\Adna\.m2\repository\jakarta\transaction\jakarta.transaction-api\2.0.1\jakarta.transaction-api-2.0.1.jar;C:\Users\Adna\.m2\repository\org\hibernate\common\hibernate-commons-annotations\6.0.6.Final\hibernate-commons-annotations-6.0.6.Final.jar;C:\Users\Adna\.m2\repository\io\smallrye\jandex\3.1.2\jandex-3.1.2.jar;C:\Users\Adna\.m2\repository\net\bytebuddy\byte-buddy\1.14.13\byte-buddy-1.14.13.jar;C:\Users\Adna\.m2\repository\org\glassfish\jaxb\jaxb-runtime\4.0.5\jaxb-runtime-4.0.5.jar;C:\Users\Adna\.m2\repository\org\glassfish\jaxb\jaxb-core\4.0.5\jaxb-core-4.0.5.jar;C:\Users\Adna\.m2\repository\org\eclipse\angus\angus-activation\2.0.2\angus-activation-2.0.2.jar;C:\Users\Adna\.m2\repository\org\glassfish\jaxb\txw2\4.0.5\txw2-4.0.5.jar;C:\Users\Adna\.m2\repository\com\sun\istack\istack-commons-runtime\4.1.2\istack-commons-runtime-4.1.2.jar;C:\Users\Adna\.m2\repository\jakarta\inject\jakarta.inject-api\2.0.1\jakarta.inject-api-2.0.1.jar;C:\Users\Adna\.m2\repository\org\antlr\antlr4-runtime\4.13.0\antlr4-runtime-4.13.0.jar;C:\Users\Adna\.m2\repository\org\springframework\data\spring-data-jpa\3.2.5\spring-data-jpa-3.2.5.jar;C:\Users\Adna\.m2\repository\org\springframework\data\spring-data-commons\3.2.5\spring-data-commons-3.2.5.jar;C:\Users\Adna\.m2\repository\org\springframework\spring-orm\6.1.6\spring-orm-6.1.6.jar;C:\Users\Adna\.m2\repository\org\springframework\spring-context\6.1.6\spring-context-6.1.6.jar;C:\Users\Adna\.m2\repository\org\springframework\spring-tx\6.1.6\spring-tx-6.1.6.jar;C:\Users\Adna\.m2\repository\org\springframework\spring-beans\6.1.6\spring-beans-6.1.6.jar;C:\Users\Adna\.m2\repository\jakarta\annotation\jakarta.annotation-api\2.1.1\jakarta.annotation-api-2.1.1.jar;C:\Users\Adna\.m2\repository\org\slf4j\slf4j-api\2.0.13\slf4j-api-2.0.13.jar;C:\Users\Adna\.m2\repository\org\springframework\spring-aspects\6.1.6\spring-aspects-6.1.6.jar;C:\Users\Adna\.m2\repository\org\springframework\boot\spring-boot-starter-web\3.2.5\spring-boot-starter-web-3.2.5.jar;C:\Users\Adna\.m2\repository\org\springframework\boot\spring-boot-starter\3.2.5\spring-boot-starter-3.2.5.jar;C:\Users\Adna\.m2\repository\org\springframework\boot\spring-boot-starter-logging\3.2.5\spring-boot-starter-logging-3.2.5.jar;C:\Users\Adna\.m2\repository\ch\qos\logback\logback-classic\1.4.14\logback-classic-1.4.14.jar;C:\Users\Adna\.m2\repository\ch\qos\logback\logback-core\1.4.14\logback-core-1.4.14.jar;C:\Users\Adna\.m2\repository\org\apache\logging\log4j\log4j-to-slf4j\2.21.1\log4j-to-slf4j-2.21.1.jar;C:\Users\Adna\.m2\repository\org\apache\logging\log4j\log4j-api\2.21.1\log4j-api-2.21.1.jar;C:\Users\Adna\.m2\repository\org\slf4j\jul-to-slf4j\2.0.13\jul-to-slf4j-2.0.13.jar;C:\Users\Adna\.m2\repository\org\yaml\snakeyaml\2.2\snakeyaml-2.2.jar;C:\Users\Adna\.m2\repository\org\springframework\boot\spring-boot-starter-json\3.2.5\spring-boot-starter-json-3.2.5.jar;C:\Users\Adna\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jdk8\2.15.4\jackson-datatype-jdk8-2.15.4.jar;C:\Users\Adna\.m2\repository\com\fasterxml\jackson\datatype\jackson-datatype-jsr310\2.15.4\jackson-datatype-jsr310-2.15.4.jar;C:\Users\Adna\.m2\repository\com\fasterxml\jackson\module\jackson-module-parameter-names\2.15.4\jackson-module-parameter-names-2.15.4.jar;C:\Users\Adna\.m2\repository\org\springframework\boot\spring-boot-starter-tomcat\3.2.5\spring-boot-starter-tomcat-3.2.5.jar;C:\Users\Adna\.m2\repository\org\apache\tomcat\embed\tomcat-embed-core\10.1.20\tomcat-embed-core-10.1.20.jar;C:\Users\Adna\.m2\repository\org\apache\tomcat\embed\tomcat-embed-websocket\10.1.20\tomcat-embed-websocket-10.1.20.jar;C:\Users\Adna\.m2\repository\org\springframework\spring-web\6.1.6\spring-web-6.1.6.jar;C:\Users\Adna\.m2\repository\org\springframework\spring-webmvc\6.1.6\spring-webmvc-6.1.6.jar;C:\Users\Adna\.m2\repository\org\springframework\spring-expression\6.1.6\spring-expression-6.1.6.jar;C:\Users\Adna\.m2\repository\org\springframework\cloud\spring-cloud-starter-loadbalancer\4.1.2\spring-cloud-starter-loadbalancer-4.1.2.jar;C:\Users\Adna\.m2\repository\org\springframework\cloud\spring-cloud-starter\4.1.2\spring-cloud-starter-4.1.2.jar;C:\Users\Adna\.m2\repository\org\springframework\cloud\spring-cloud-context\4.1.2\spring-cloud-context-4.1.2.jar;C:\Users\Adna\.m2\repository\org\springframework\security\spring-security-rsa\1.1.2\spring-security-rsa-1.1.2.jar;C:\Users\Adna\.m2\repository\org\bouncycastle\bcprov-jdk18on\1.77\bcprov-jdk18on-1.77.jar;C:\Users\Adna\.m2\repository\org\springframework\cloud\spring-cloud-loadbalancer\4.1.2\spring-cloud-loadbalancer-4.1.2.jar;C:\Users\Adna\.m2\repository\io\projectreactor\reactor-core\3.6.5\reactor-core-3.6.5.jar;C:\Users\Adna\.m2\repository\org\reactivestreams\reactive-streams\1.0.4\reactive-streams-1.0.4.jar;C:\Users\Adna\.m2\repository\io\projectreactor\addons\reactor-extra\3.5.1\reactor-extra-3.5.1.jar;C:\Users\Adna\.m2\repository\org\springframework\boot\spring-boot-starter-cache\3.2.5\spring-boot-starter-cache-3.2.5.jar;C:\Users\Adna\.m2\repository\org\springframework\spring-context-support\6.1.6\spring-context-support-6.1.6.jar;C:\Users\Adna\.m2\repository\com\stoyanr\evictor\1.0.0\evictor-1.0.0.jar;C:\Users\Adna\.m2\repository\org\springframework\boot\spring-boot-devtools\3.2.5\spring-boot-devtools-3.2.5.jar;C:\Users\Adna\.m2\repository\org\springframework\boot\spring-boot\3.2.5\spring-boot-3.2.5.jar;C:\Users\Adna\.m2\repository\org\springframework\boot\spring-boot-autoconfigure\3.2.5\spring-boot-autoconfigure-3.2.5.jar;C:\Users\Adna\.m2\repository\com\mysql\mysql-connector-j\8.0.33\mysql-connector-j-8.0.33.jar;C:\Users\Adna\.m2\repository\org\springframework\boot\spring-boot-starter-test\3.2.5\spring-boot-starter-test-3.2.5.jar;C:\Users\Adna\.m2\repository\org\springframework\boot\spring-boot-test\3.2.5\spring-boot-test-3.2.5.jar;C:\Users\Adna\.m2\repository\org\springframework\boot\spring-boot-test-autoconfigure\3.2.5\spring-boot-test-autoconfigure-3.2.5.jar;C:\Users\Adna\.m2\repository\com\jayway\jsonpath\json-path\2.9.0\json-path-2.9.0.jar;C:\Users\Adna\.m2\repository\jakarta\xml\bind\jakarta.xml.bind-api\4.0.2\jakarta.xml.bind-api-4.0.2.jar;C:\Users\Adna\.m2\repository\jakarta\activation\jakarta.activation-api\2.1.3\jakarta.activation-api-2.1.3.jar;C:\Users\Adna\.m2\repository\net\minidev\json-smart\2.5.1\json-smart-2.5.1.jar;C:\Users\Adna\.m2\repository\net\minidev\accessors-smart\2.5.1\accessors-smart-2.5.1.jar;C:\Users\Adna\.m2\repository\org\ow2\asm\asm\9.6\asm-9.6.jar;C:\Users\Adna\.m2\repository\org\assertj\assertj-core\3.24.2\assertj-core-3.24.2.jar;C:\Users\Adna\.m2\repository\org\awaitility\awaitility\4.2.1\awaitility-4.2.1.jar;C:\Users\Adna\.m2\repository\org\hamcrest\hamcrest\2.2\hamcrest-2.2.jar;C:\Users\Adna\.m2\repository\org\junit\jupiter\junit-jupiter\5.10.2\junit-jupiter-5.10.2.jar;C:\Users\Adna\.m2\repository\org\junit\jupiter\junit-jupiter-api\5.10.2\junit-jupiter-api-5.10.2.jar;C:\Users\Adna\.m2\repository\org\opentest4j\opentest4j\1.3.0\opentest4j-1.3.0.jar;C:\Users\Adna\.m2\repository\org\junit\platform\junit-platform-commons\1.10.2\junit-platform-commons-1.10.2.jar;C:\Users\Adna\.m2\repository\org\apiguardian\apiguardian-api\1.1.2\apiguardian-api-1.1.2.jar;C:\Users\Adna\.m2\repository\org\junit\jupiter\junit-jupiter-params\5.10.2\junit-jupiter-params-5.10.2.jar;C:\Users\Adna\.m2\repository\org\junit\jupiter\junit-jupiter-engine\5.10.2\junit-jupiter-engine-5.10.2.jar;C:\Users\Adna\.m2\repository\org\junit\platform\junit-platform-engine\1.10.2\junit-platform-engine-1.10.2.jar;C:\Users\Adna\.m2\repository\org\mockito\mockito-core\5.7.0\mockito-core-5.7.0.jar;C:\Users\Adna\.m2\repository\net\bytebuddy\byte-buddy-agent\1.14.13\byte-buddy-agent-1.14.13.jar;C:\Users\Adna\.m2\repository\org\objenesis\objenesis\3.3\objenesis-3.3.jar;C:\Users\Adna\.m2\repository\org\mockito\mockito-junit-jupiter\5.7.0\mockito-junit-jupiter-5.7.0.jar;C:\Users\Adna\.m2\repository\org\skyscreamer\jsonassert\1.5.1\jsonassert-1.5.1.jar;C:\Users\Adna\.m2\repository\com\vaadin\external\google\android-json\0.0.20131108.vaadin1\android-json-0.0.20131108.vaadin1.jar;C:\Users\Adna\.m2\repository\org\springframework\spring-core\6.1.6\spring-core-6.1.6.jar;C:\Users\Adna\.m2\repository\org\springframework\spring-jcl\6.1.6\spring-jcl-6.1.6.jar;C:\Users\Adna\.m2\repository\org\springframework\spring-test\6.1.6\spring-test-6.1.6.jar;C:\Users\Adna\.m2\repository\org\xmlunit\xmlunit-core\2.9.1\xmlunit-core-2.9.1.jar;C:\Users\Adna\.m2\repository\org\springframework\security\spring-security-test\6.2.4\spring-security-test-6.2.4.jar;C:\Users\Adna\.m2\repository\org\springframework\security\spring-security-core\6.2.4\spring-security-core-6.2.4.jar;C:\Users\Adna\.m2\repository\org\springframework\security\spring-security-crypto\6.2.4\spring-security-crypto-6.2.4.jar;C:\Users\Adna\.m2\repository\org\springframework\security\spring-security-web\6.2.4\spring-security-web-6.2.4.jar;C:\Users\Adna\.m2\repository\org\springframework\boot\spring-boot-starter-jdbc\3.2.5\spring-boot-starter-jdbc-3.2.5.jar;C:\Users\Adna\.m2\repository\com\zaxxer\HikariCP\5.0.1\HikariCP-5.0.1.jar;C:\Users\Adna\.m2\repository\org\springframework\spring-jdbc\6.1.6\spring-jdbc-6.1.6.jar;C:\Users\Adna\.m2\repository\org\springframework\boot\spring-boot-starter-validation\3.2.5\spring-boot-starter-validation-3.2.5.jar;C:\Users\Adna\.m2\repository\org\apache\tomcat\embed\tomcat-embed-el\10.1.20\tomcat-embed-el-10.1.20.jar;C:\Users\Adna\.m2\repository\com\github\fge\json-patch\1.9\json-patch-1.9.jar;C:\Users\Adna\.m2\repository\com\github\fge\jackson-coreutils\1.6\jackson-coreutils-1.6.jar;C:\Users\Adna\.m2\repository\com\github\fge\msg-simple\1.1\msg-simple-1.1.jar;C:\Users\Adna\.m2\repository\com\github\fge\btf\1.2\btf-1.2.jar;C:\Users\Adna\.m2\repository\com\google\guava\guava\16.0.1\guava-16.0.1.jar;C:\Users\Adna\.m2\repository\com\google\code\findbugs\jsr305\2.0.1\jsr305-2.0.1.jar;C:\Users\Adna\.m2\repository\org\springdoc\springdoc-openapi-starter-webmvc-ui\2.6.0\springdoc-openapi-starter-webmvc-ui-2.6.0.jar;C:\Users\Adna\.m2\repository\org\springdoc\springdoc-openapi-starter-webmvc-api\2.6.0\springdoc-openapi-starter-webmvc-api-2.6.0.jar;C:\Users\Adna\.m2\repository\org\springdoc\springdoc-openapi-starter-common\2.6.0\springdoc-openapi-starter-common-2.6.0.jar;C:\Users\Adna\.m2\repository\io\swagger\core\v3\swagger-core-jakarta\2.2.22\swagger-core-jakarta-2.2.22.jar;C:\Users\Adna\.m2\repository\org\apache\commons\commons-lang3\3.13.0\commons-lang3-3.13.0.jar;C:\Users\Adna\.m2\repository\io\swagger\core\v3\swagger-annotations-jakarta\2.2.22\swagger-annotations-jakarta-2.2.22.jar;C:\Users\Adna\.m2\repository\io\swagger\core\v3\swagger-models-jakarta\2.2.22\swagger-models-jakarta-2.2.22.jar;C:\Users\Adna\.m2\repository\com\fasterxml\jackson\dataformat\jackson-dataformat-yaml\2.15.4\jackson-dataformat-yaml-2.15.4.jar;C:\Users\Adna\.m2\repository\org\webjars\swagger-ui\5.17.14\swagger-ui-5.17.14.jar;C:\Users\Adna\.m2\repository\org\projectlombok\lombok\1.18.30\lombok-1.18.30.jar;C:\Users\Adna\.m2\repository\org\hibernate\validator\hibernate-validator\8.0.1.Final\hibernate-validator-8.0.1.Final.jar;C:\Users\Adna\.m2\repository\jakarta\validation\jakarta.validation-api\3.0.2\jakarta.validation-api-3.0.2.jar;C:\Users\Adna\.m2\repository\org\jboss\logging\jboss-logging\3.5.3.Final\jboss-logging-3.5.3.Final.jar;C:\Users\Adna\.m2\repository\com\fasterxml\classmate\1.6.0\classmate-1.6.0.jar;C:\Users\Adna\.m2\repository\org\modelmapper\extensions\modelmapper-spring\3.0.0\modelmapper-spring-3.0.0.jar;C:\Users\Adna\.m2\repository\org\modelmapper\modelmapper\3.0.0\modelmapper-3.0.0.jar;C:\Users\Adna\.m2\repository\io\jsonwebtoken\jjwt-api\0.11.5\jjwt-api-0.11.5.jar;C:\Users\Adna\.m2\repository\io\jsonwebtoken\jjwt-impl\0.11.5\jjwt-impl-0.11.5.jar;C:\Users\Adna\.m2\repository\io\jsonwebtoken\jjwt-jackson\0.11.5\jjwt-jackson-0.11.5.jar;C:\Users\Adna\.m2\repository\com\fasterxml\jackson\core\jackson-databind\2.15.4\jackson-databind-2.15.4.jar;C:\Users\Adna\.m2\repository\com\fasterxml\jackson\core\jackson-annotations\2.15.4\jackson-annotations-2.15.4.jar;C:\Users\Adna\.m2\repository\com\fasterxml\jackson\core\jackson-core\2.15.4\jackson-core-2.15.4.jar;C:\Users\Adna\.m2\repository\org\springframework\cloud\spring-cloud-starter-netflix-eureka-client\4.1.1\spring-cloud-starter-netflix-eureka-client-4.1.1.jar;C:\Users\Adna\.m2\repository\org\springframework\cloud\spring-cloud-netflix-eureka-client\4.1.1\spring-cloud-netflix-eureka-client-4.1.1.jar;C:\Users\Adna\.m2\repository\org\apache\httpcomponents\client5\httpclient5\5.2.3\httpclient5-5.2.3.jar;C:\Users\Adna\.m2\repository\org\apache\httpcomponents\core5\httpcore5\5.2.4\httpcore5-5.2.4.jar;C:\Users\Adna\.m2\repository\org\apache\httpcomponents\core5\httpcore5-h2\5.2.4\httpcore5-h2-5.2.4.jar;C:\Users\Adna\.m2\repository\com\netflix\eureka\eureka-client\2.0.2\eureka-client-2.0.2.jar;C:\Users\Adna\.m2\repository\com\netflix\netflix-commons\netflix-eventbus\0.3.0\netflix-eventbus-0.3.0.jar;C:\Users\Adna\.m2\repository\com\netflix\netflix-commons\netflix-infix\0.3.0\netflix-infix-0.3.0.jar;C:\Users\Adna\.m2\repository\commons-jxpath\commons-jxpath\1.3\commons-jxpath-1.3.jar;C:\Users\Adna\.m2\repository\joda-time\joda-time\2.3\joda-time-2.3.jar;C:\Users\Adna\.m2\repository\org\antlr\antlr-runtime\3.4\antlr-runtime-3.4.jar;C:\Users\Adna\.m2\repository\org\antlr\stringtemplate\3.2.1\stringtemplate-3.2.1.jar;C:\Users\Adna\.m2\repository\antlr\antlr\2.7.7\antlr-2.7.7.jar;C:\Users\Adna\.m2\repository\com\google\code\gson\gson\2.10.1\gson-2.10.1.jar;C:\Users\Adna\.m2\repository\org\apache\commons\commons-math\2.2\commons-math-2.2.jar;C:\Users\Adna\.m2\repository\com\thoughtworks\xstream\xstream\1.4.19\xstream-1.4.19.jar;C:\Users\Adna\.m2\repository\io\github\x-stream\mxparser\1.2.2\mxparser-1.2.2.jar;C:\Users\Adna\.m2\repository\xmlpull\xmlpull\1.1.3.1\xmlpull-1.1.3.1.jar;C:\Users\Adna\.m2\repository\jakarta\ws\rs\jakarta.ws.rs-api\3.1.0\jakarta.ws.rs-api-3.1.0.jar;C:\Users\Adna\.m2\repository\com\netflix\servo\servo-core\0.12.21\servo-core-0.12.21.jar;C:\Users\Adna\.m2\repository\commons-configuration\commons-configuration\1.10\commons-configuration-1.10.jar;C:\Users\Adna\.m2\repository\commons-lang\commons-lang\2.6\commons-lang-2.6.jar;C:\Users\Adna\.m2\repository\org\codehaus\jettison\jettison\1.5.4\jettison-1.5.4.jar;C:\Users\Adna\.m2\repository\com\netflix\eureka\eureka-core\2.0.2\eureka-core-2.0.2.jar;C:\Users\Adna\.m2\repository\com\fasterxml\woodstox\woodstox-core\6.2.1\woodstox-core-6.2.1.jar;C:\Users\Adna\.m2\repository\org\codehaus\woodstox\stax2-api\4.2.1\stax2-api-4.2.1.jar;C:\Users\Adna\.m2\repository\org\springframework\boot\spring-boot-starter-actuator\3.2.5\spring-boot-starter-actuator-3.2.5.jar;C:\Users\Adna\.m2\repository\org\springframework\boot\spring-boot-actuator-autoconfigure\3.2.5\spring-boot-actuator-autoconfigure-3.2.5.jar;C:\Users\Adna\.m2\repository\org\springframework\boot\spring-boot-actuator\3.2.5\spring-boot-actuator-3.2.5.jar;C:\Users\Adna\.m2\repository\io\micrometer\micrometer-observation\1.12.5\micrometer-observation-1.12.5.jar;C:\Users\Adna\.m2\repository\io\micrometer\micrometer-commons\1.12.5\micrometer-commons-1.12.5.jar;C:\Users\Adna\.m2\repository\io\micrometer\micrometer-jakarta9\1.12.5\micrometer-jakarta9-1.12.5.jar;C:\Users\Adna\.m2\repository\io\micrometer\micrometer-core\1.12.5\micrometer-core-1.12.5.jar;C:\Users\Adna\.m2\repository\org\hdrhistogram\HdrHistogram\2.1.12\HdrHistogram-2.1.12.jar;C:\Users\Adna\.m2\repository\org\latencyutils\LatencyUtils\2.0.3\LatencyUtils-2.0.3.jar;C:\Users\Adna\.m2\repository\org\springframework\cloud\spring-cloud-starter-openfeign\4.1.1\spring-cloud-starter-openfeign-4.1.1.jar;C:\Users\Adna\.m2\repository\org\springframework\cloud\spring-cloud-openfeign-core\4.1.1\spring-cloud-openfeign-core-4.1.1.jar;C:\Users\Adna\.m2\repository\io\github\openfeign\form\feign-form-spring\3.8.0\feign-form-spring-3.8.0.jar;C:\Users\Adna\.m2\repository\io\github\openfeign\form\feign-form\3.8.0\feign-form-3.8.0.jar;C:\Users\Adna\.m2\repository\commons-fileupload\commons-fileupload\1.5\commons-fileupload-1.5.jar;C:\Users\Adna\.m2\repository\commons-io\commons-io\2.11.0\commons-io-2.11.0.jar;C:\Users\Adna\.m2\repository\org\springframework\cloud\spring-cloud-commons\4.1.2\spring-cloud-commons-4.1.2.jar;C:\Users\Adna\.m2\repository\io\github\openfeign\feign-core\13.2.1\feign-core-13.2.1.jar;C:\Users\Adna\.m2\repository\io\github\openfeign\feign-slf4j\13.2.1\feign-slf4j-13.2.1.jar;C:\Users\Adna\.m2\repository\io\github\openfeign\feign-httpclient\12.1\feign-httpclient-12.1.jar;C:\Users\Adna\.m2\repository\org\apache\httpcomponents\httpclient\4.5.13\httpclient-4.5.13.jar;C:\Users\Adna\.m2\repository\org\apache\httpcomponents\httpcore\4.4.16\httpcore-4.4.16.jar;C:\Users\Adna\.m2\repository\commons-logging\commons-logging\1.2\commons-logging-1.2.jar;C:\Users\Adna\.m2\repository\commons-codec\commons-codec\1.16.1\commons-codec-1.16.1.jar;C:\Users\Adna\.m2\repository\com\h2database\h2\2.2.224\h2-2.2.224.jar;"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="C:\Users\Adna"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2025-01-21"/>
+    <property name="java.home" value="C:\Program Files\Java\jdk-21"/>
+    <property name="file.separator" value="\"/>
+    <property name="basedir" value="C:\Users\Adna\Downloads\termini-pregledi\termini-pregledi"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="FILE_LOG_CHARSET" value="UTF-8"/>
+    <property name="java.awt.headless" value="true"/>
+    <property name="surefire.real.class.path" value="C:\Users\Adna\AppData\Local\Temp\surefire6540002933622175600\surefirebooter-20250620035601583_3.jar"/>
+    <property name="user.script" value=""/>
+    <property name="user.script.format" value="Latn"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="java.runtime.version" value="21.0.6+8-LTS-188"/>
+    <property name="user.name" value="Adna"/>
+    <property name="stdout.encoding" value="Cp1252"/>
+    <property name="path.separator" value=";"/>
+    <property name="os.version" value="10.0"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="localRepository" value="C:\Users\Adna\.m2\repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="C:\Users\Adna\AppData\Local\Temp\"/>
+    <property name="com.zaxxer.hikari.pool_number" value="1"/>
+    <property name="java.version" value="21.0.6"/>
+    <property name="user.dir" value="C:\Users\Adna\Downloads\termini-pregledi\termini-pregledi"/>
+    <property name="os.arch" value="amd64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="PID" value="34304"/>
+    <property name="user.language.format" value="bs"/>
+    <property name="sun.os.patch.level" value=""/>
+    <property name="CONSOLE_LOG_CHARSET" value="UTF-8"/>
+    <property name="native.encoding" value="Cp1252"/>
+    <property name="java.library.path" value="C:\Program Files\Java\jdk-21\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\Program Files\Java\jdk-21;C:\Program Files\Java\jdk-21\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.6\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.6\libnvvp;C:\Program Files\OpenLogic\jdk-8.0.392.08-hotspot\bin;C:\Program Files\Python310\Scripts\;C:\Program Files\Python310\;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client\;C:\Program Files\Intel\iCLS Client\;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Users\Adna\.jdks\openjdk-17.0.1\bin;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\Program Files\Microsoft SQL Server\130\Tools\Binn\;C:\Users\Adna\.vscode\galen-bin-2.4.4;C:\Users\Adna\.vscode\geckodriver;C:\Program Files\Microsoft SQL Server\150\Tools\Binn\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Users\Adna\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Users\Adna\AppData\Roaming\npm;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files\apache-maven-3.9.9;C:\Program Files\apache-maven-3.9.9\bin;C:\Program Files\Git\cmd;C:\Program Files\Docker\Docker\resources\bin;C:\Program Files\MySQL\MySQL Shell 8.0\bin\;C:\Users\Adna\anaconda3;C:\Users\Adna\anaconda3\Library\mingw-w64\bin;C:\Users\Adna\anaconda3\Library\usr\bin;C:\Users\Adna\anaconda3\Library\bin;C:\Users\Adna\anaconda3\Scripts;C:\Users\Adna\AppData\Local\Programs\Python\Python313\Scripts\;C:\Users\Adna\AppData\Local\Programs\Python\Python313\;C:\Users\Adna\AppData\Local\Programs\Julia 1.6.3;C:\Users\Adna\AppData\Local\Microsoft\WindowsApps;C:\Users\Adna\AppData\Local\Programs\MiKTeX\miktex\bin\x64\;C:\texlive\2019\bin\win32;C:\MinGW\bin;C:\Users\Adna\AppData\Local\GitHubDesktop\bin;C:\Users\Adna\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Adna\AppData\Roaming\npm;C:\Users\Adna\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Program Files\JetBrains\IntelliJ IDEA Community Edition 2024.3.5\bin;;."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="stderr.encoding" value="Cp1252"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="21.0.6+8-LTS-188"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
+    <property name="java.class.version" value="65.0"/>
+    <property name="LOGGED_APPLICATION_NAME" value="[termini-pregledi-test] "/>
+  </properties>
+  <testcase name="contextLoads" classname="com.medicinska.rezervacija.termini_pregledi.TerminiPreglediApplicationTests" time="1.438">
+    <system-out><![CDATA[03:56:03.928 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.medicinska.rezervacija.termini_pregledi.TerminiPreglediApplicationTests]: TerminiPreglediApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+03:56:04.278 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.medicinska.rezervacija.termini_pregledi.TerminiPreglediApplication for test class com.medicinska.rezervacija.termini_pregledi.TerminiPreglediApplicationTests
+03:56:04.773 [main] INFO org.springframework.boot.devtools.restart.RestartApplicationListener -- Restart disabled due to context in which it is running
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.5)
+
+2025-06-20T03:56:05.909+02:00  INFO 34304 --- [termini-pregledi-test] [           main] c.m.r.t.TerminiPreglediApplicationTests  : Starting TerminiPreglediApplicationTests using Java 21.0.6 with PID 34304 (started by Adna in C:\Users\Adna\Downloads\termini-pregledi\termini-pregledi)
+2025-06-20T03:56:05.914+02:00  INFO 34304 --- [termini-pregledi-test] [           main] c.m.r.t.TerminiPreglediApplicationTests  : The following 1 profile is active: "test"
+2025-06-20T03:56:06.073+02:00 DEBUG 34304 --- [termini-pregledi-test] [           main] o.s.w.c.s.GenericWebApplicationContext   : Refreshing org.springframework.web.context.support.GenericWebApplicationContext@4bff2185
+2025-06-20T03:56:08.681+02:00 DEBUG 34304 --- [termini-pregledi-test] [           main] o.s.c.openfeign.FeignClientsRegistrar$1  : Identified candidate component class: file [C:\Users\Adna\Downloads\termini-pregledi\termini-pregledi\target\classes\com\medicinska\rezervacija\termini_pregledi\remote\KorisniciDoktoriRemoteService.class]
+2025-06-20T03:56:09.623+02:00  INFO 34304 --- [termini-pregledi-test] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-06-20T03:56:09.981+02:00  INFO 34304 --- [termini-pregledi-test] [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 333 ms. Found 2 JPA repository interfaces.
+2025-06-20T03:56:10.753+02:00 DEBUG 34304 --- [termini-pregledi-test] [           main] o.s.cloud.context.scope.GenericScope     : Generating bean factory id from names: [KORISNICI-DOKTORI.FeignClientSpecification, applicationAvailability, applicationTaskExecutor, authenticationEventPublisher, basicErrorController, beanNameHandlerMapping, beanNameViewResolver, blockingLoadBalancerClient, caffeineWarnLogger, characterEncodingFilter, classLoaderMetrics, com.medicinska.rezervacija.termini_pregledi.remote.KorisniciDoktoriRemoteService, compositeCompatibilityVerifier, compositeDiscoveryClient, configDataContextRefresher, configurationPropertiesBeans, configurationPropertiesRebinder, controllerEndpointDiscoverer, controllerEndpointHandlerMapping, controllerExposeExcludePropertyEndpointFilter, conventionErrorViewResolver, data-jpa.repository-aot-processor#0, dataLoader, dataSource, dataSourcePoolMetadataMeterBinder, dataSourceScriptDatabaseInitializer, dbHealthContributor, default.com.medicinska.rezervacija.termini_pregledi.TerminiPreglediApplication.FeignClientSpecification, default.org.springframework.cloud.loadbalancer.config.BlockingLoadBalancerClientAutoConfiguration.LoadBalancerClientSpecification, default.org.springframework.cloud.loadbalancer.config.LoadBalancerAutoConfiguration.LoadBalancerClientSpecification, default.org.springframework.cloud.netflix.eureka.loadbalancer.LoadBalancerEurekaAutoConfiguration.LoadBalancerClientSpecification, defaultEurekaClientHttpRequestFactorySupplier, defaultLoadBalancerCacheManager, defaultMeterObservationHandler, defaultServletHandlerMapping, defaultValidator, defaultViewResolver, defaultsBindHandlerAdvisor, deferringLoadBalancerInterceptor, discoveryClient, discoveryClientHealthIndicator, discoveryCompositeHealthContributor, diskSpaceHealthIndicator, diskSpaceMetrics, dispatcherServlet, dispatcherServletRegistration, eagerTaskExecutorMetrics, emBeanDefinitionRegistrarPostProcessor, endpointCachingOperationInvokerAdvisor, endpointMediaTypes, endpointObjectMapper, endpointObjectMapperWebMvcConfigurer, endpointOperationParameterMapper, entityManagerFactory, entityManagerFactoryBuilder, environmentManager, error, errorAttributes, errorPageCustomizer, errorPageRegistrarBeanPostProcessor, eureka.client.rest-template-timeout-org.springframework.cloud.netflix.eureka.RestTemplateTimeoutProperties, eurekaApplicationInfoManager, eurekaAutoServiceRegistration, eurekaClient, eurekaClientConfigBean, eurekaDebugLogger, eurekaFeature, eurekaHealthCheckHandler, eurekaHealthIndicator, eurekaInstanceConfigBean, eurekaLoadBalancerProperties, eurekaRegistration, eurekaServiceRegistry, feignChildContextInitializer, feignClient, feignClientBeanFactoryInitializationCodeGenerator, feignContext, feignFeature, feignTargeter, fileDescriptorMetrics, fileWatcher, flashMapManager, formContentFilter, globalExceptionHandler, gson, gsonBuilder, handlerExceptionResolver, handlerFunctionAdapter, healthContributorRegistry, healthEndpoint, healthEndpointGroupMembershipValidator, healthEndpointGroups, healthEndpointGroupsBeanPostProcessor, healthEndpointWebExtension, healthEndpointWebMvcHandlerMapping, healthHttpCodeStatusMapper, healthStatusAggregator, hikariDataSourceMeterBinder, hikariPoolDataSourceMetadataProvider, httpMessageConvertersRestClientCustomizer, httpRequestHandlerAdapter, inetUtils, inetUtilsProperties, infoEndpoint, initTerminiPreglediDatabase, jacksonGeoModule, jacksonObjectMapper, jacksonObjectMapperBuilder, jdbcClient, jdbcConnectionDetails, jdbcConnectionDetailsHikariBeanPostProcessor, jdbcTemplate, jpa.PregledRepository.fragments#0, jpa.TerminRepository.fragments#0, jpa.named-queries#0, jpa.named-queries#1, jpaContext, jpaMappingContext, jpaSharedEM_entityManagerFactory, jpaVendorAdapter, jsonComponentModule, jsonMixinModule, jsonMixinModuleEntries, jvmCompilationMetrics, jvmGcMetrics, jvmHeapPressureMetrics, jvmInfoMetrics, jvmMemoryMetrics, jvmThreadMetrics, lbRestClientPostProcessor, lifecycleProcessor, loadBalancedRestTemplateInitializerDeprecated, loadBalancerChildContextInitializer, loadBalancerClientFactory, loadBalancerClientsDefaultsMappingsProvider, loadBalancerEagerContextInitializer, loadBalancerInterceptor, loadBalancerRequestFactory, loadBalancerServiceInstanceCookieTransformer, localeCharsetMappingsCustomizer, localeResolver, logbackMetrics, loggingRebinder, management.endpoint.health-org.springframework.boot.actuate.autoconfigure.health.HealthEndpointProperties, management.endpoints.web-org.springframework.boot.actuate.autoconfigure.endpoint.web.WebEndpointProperties, management.endpoints.web.cors-org.springframework.boot.actuate.autoconfigure.endpoint.web.CorsEndpointProperties, management.health.db-org.springframework.boot.actuate.autoconfigure.jdbc.DataSourceHealthIndicatorProperties, management.health.diskspace-org.springframework.boot.actuate.autoconfigure.system.DiskSpaceHealthIndicatorProperties, management.info-org.springframework.boot.actuate.autoconfigure.info.InfoContributorProperties, management.metrics-org.springframework.boot.actuate.autoconfigure.metrics.MetricsProperties, management.observations-org.springframework.boot.actuate.autoconfigure.observation.ObservationProperties, management.server-org.springframework.boot.actuate.autoconfigure.web.server.ManagementServerProperties, management.simple.metrics.export-org.springframework.boot.actuate.autoconfigure.metrics.export.simple.SimpleProperties, managementServletContext, mappingJackson2HttpMessageConverter, messageConverters, meterRegistryCloser, meterRegistryPostProcessor, methodValidationPostProcessor, metricsEndpoint, metricsHttpClientUriTagFilter, metricsHttpServerUriTagFilter, metricsObservationHandlerGrouping, metricsRepositoryMethodInvocationListener, metricsRepositoryMethodInvocationListenerBeanPostProcessor, micrometerClock, modelMapper, modelMapperConfig, multipartConfigElement, multipartResolver, mvcContentNegotiationManager, mvcConversionService, mvcHandlerMappingIntrospector, mvcPathMatcher, mvcPatternParser, mvcResourceUrlProvider, mvcUriComponentsContributor, mvcUrlPathHelper, mvcValidator, mvcViewResolver, namedParameterJdbcTemplate, observabilitySchedulingConfigurer, observationRegistry, observationRegistryPostProcessor, observationRestClientCustomizer, observationRestTemplateCustomizer, observedAspect, offsetResolver, openEntityManagerInViewInterceptor, openEntityManagerInViewInterceptorConfigurer, org.springframework.aop.config.internalAutoProxyCreator, org.springframework.boot.actuate.autoconfigure.availability.AvailabilityHealthContributorAutoConfiguration, org.springframework.boot.actuate.autoconfigure.endpoint.EndpointAutoConfiguration, org.springframework.boot.actuate.autoconfigure.endpoint.jackson.JacksonEndpointAutoConfiguration, org.springframework.boot.actuate.autoconfigure.endpoint.web.ServletEndpointManagementContextConfiguration, org.springframework.boot.actuate.autoconfigure.endpoint.web.ServletEndpointManagementContextConfiguration$WebMvcServletEndpointManagementContextConfiguration, org.springframework.boot.actuate.autoconfigure.endpoint.web.WebEndpointAutoConfiguration, org.springframework.boot.actuate.autoconfigure.endpoint.web.WebEndpointAutoConfiguration$WebEndpointServletConfiguration, org.springframework.boot.actuate.autoconfigure.endpoint.web.servlet.WebMvcEndpointManagementContextConfiguration, org.springframework.boot.actuate.autoconfigure.health.HealthContributorAutoConfiguration, org.springframework.boot.actuate.autoconfigure.health.HealthEndpointAutoConfiguration, org.springframework.boot.actuate.autoconfigure.health.HealthEndpointConfiguration, org.springframework.boot.actuate.autoconfigure.health.HealthEndpointWebExtensionConfiguration, org.springframework.boot.actuate.autoconfigure.health.HealthEndpointWebExtensionConfiguration$MvcAdditionalHealthEndpointPathsConfiguration, org.springframework.boot.actuate.autoconfigure.health.ReactiveHealthEndpointConfiguration, org.springframework.boot.actuate.autoconfigure.info.InfoContributorAutoConfiguration, org.springframework.boot.actuate.autoconfigure.info.InfoEndpointAutoConfiguration, org.springframework.boot.actuate.autoconfigure.jdbc.DataSourceHealthContributorAutoConfiguration, org.springframework.boot.actuate.autoconfigure.metrics.CompositeMeterRegistryAutoConfiguration, org.springframework.boot.actuate.autoconfigure.metrics.JvmMetricsAutoConfiguration, org.springframework.boot.actuate.autoconfigure.metrics.LogbackMetricsAutoConfiguration, org.springframework.boot.actuate.autoconfigure.metrics.MetricsAutoConfiguration, org.springframework.boot.actuate.autoconfigure.metrics.MetricsEndpointAutoConfiguration, org.springframework.boot.actuate.autoconfigure.metrics.SystemMetricsAutoConfiguration, org.springframework.boot.actuate.autoconfigure.metrics.data.RepositoryMetricsAutoConfiguration, org.springframework.boot.actuate.autoconfigure.metrics.export.simple.SimpleMetricsExportAutoConfiguration, org.springframework.boot.actuate.autoconfigure.metrics.integration.IntegrationMetricsAutoConfiguration, org.springframework.boot.actuate.autoconfigure.metrics.jdbc.DataSourcePoolMetricsAutoConfiguration, org.springframework.boot.actuate.autoconfigure.metrics.jdbc.DataSourcePoolMetricsAutoConfiguration$DataSourcePoolMetadataMetricsConfiguration, org.springframework.boot.actuate.autoconfigure.metrics.jdbc.DataSourcePoolMetricsAutoConfiguration$HikariDataSourceMetricsConfiguration, org.springframework.boot.actuate.autoconfigure.metrics.startup.StartupTimeMetricsListenerAutoConfiguration, org.springframework.boot.actuate.autoconfigure.metrics.task.TaskExecutorMetricsAutoConfiguration, org.springframework.boot.actuate.autoconfigure.metrics.web.tomcat.TomcatMetricsAutoConfiguration, org.springframework.boot.actuate.autoconfigure.observation.ObservationAutoConfiguration, org.springframework.boot.actuate.autoconfigure.observation.ObservationAutoConfiguration$MeterObservationHandlerConfiguration, org.springframework.boot.actuate.autoconfigure.observation.ObservationAutoConfiguration$MeterObservationHandlerConfiguration$OnlyMetricsMeterObservationHandlerConfiguration, org.springframework.boot.actuate.autoconfigure.observation.ObservationAutoConfiguration$ObservedAspectConfiguration, org.springframework.boot.actuate.autoconfigure.observation.ObservationAutoConfiguration$OnlyMetricsConfiguration, org.springframework.boot.actuate.autoconfigure.observation.web.client.HttpClientObservationsAutoConfiguration, org.springframework.boot.actuate.autoconfigure.observation.web.client.HttpClientObservationsAutoConfiguration$MeterFilterConfiguration, org.springframework.boot.actuate.autoconfigure.observation.web.client.RestClientObservationConfiguration, org.springframework.boot.actuate.autoconfigure.observation.web.client.RestTemplateObservationConfiguration, org.springframework.boot.actuate.autoconfigure.observation.web.servlet.WebMvcObservationAutoConfiguration, org.springframework.boot.actuate.autoconfigure.observation.web.servlet.WebMvcObservationAutoConfiguration$MeterFilterConfiguration, org.springframework.boot.actuate.autoconfigure.scheduling.ScheduledTasksObservabilityAutoConfiguration, org.springframework.boot.actuate.autoconfigure.security.servlet.SecurityRequestMatchersManagementContextConfiguration, org.springframework.boot.actuate.autoconfigure.security.servlet.SecurityRequestMatchersManagementContextConfiguration$MvcRequestMatcherConfiguration, org.springframework.boot.actuate.autoconfigure.system.DiskSpaceHealthContributorAutoConfiguration, org.springframework.boot.actuate.autoconfigure.web.server.ManagementContextAutoConfiguration, org.springframework.boot.actuate.autoconfigure.web.server.ManagementContextAutoConfiguration$SameManagementContextConfiguration, org.springframework.boot.actuate.autoconfigure.web.server.ManagementContextAutoConfiguration$SameManagementContextConfiguration$EnableSameManagementContextConfiguration, org.springframework.boot.actuate.autoconfigure.web.servlet.ServletManagementContextAutoConfiguration, org.springframework.boot.autoconfigure.AutoConfigurationPackages, org.springframework.boot.autoconfigure.aop.AopAutoConfiguration, org.springframework.boot.autoconfigure.aop.AopAutoConfiguration$AspectJAutoProxyingConfiguration, org.springframework.boot.autoconfigure.aop.AopAutoConfiguration$AspectJAutoProxyingConfiguration$CglibAutoProxyConfiguration, org.springframework.boot.autoconfigure.availability.ApplicationAvailabilityAutoConfiguration, org.springframework.boot.autoconfigure.context.ConfigurationPropertiesAutoConfiguration, org.springframework.boot.autoconfigure.context.LifecycleAutoConfiguration, org.springframework.boot.autoconfigure.context.PropertyPlaceholderAutoConfiguration, org.springframework.boot.autoconfigure.dao.PersistenceExceptionTranslationAutoConfiguration, org.springframework.boot.autoconfigure.data.jpa.JpaRepositoriesAutoConfiguration, org.springframework.boot.autoconfigure.data.web.SpringDataWebAutoConfiguration, org.springframework.boot.autoconfigure.gson.GsonAutoConfiguration, org.springframework.boot.autoconfigure.http.GsonHttpMessageConvertersConfiguration, org.springframework.boot.autoconfigure.http.HttpMessageConvertersAutoConfiguration, org.springframework.boot.autoconfigure.http.HttpMessageConvertersAutoConfiguration$StringHttpMessageConverterConfiguration, org.springframework.boot.autoconfigure.http.JacksonHttpMessageConvertersConfiguration, org.springframework.boot.autoconfigure.http.JacksonHttpMessageConvertersConfiguration$MappingJackson2HttpMessageConverterConfiguration, org.springframework.boot.autoconfigure.info.ProjectInfoAutoConfiguration, org.springframework.boot.autoconfigure.internalCachingMetadataReaderFactory, org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration, org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$Jackson2ObjectMapperBuilderCustomizerConfiguration, org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonMixinConfiguration, org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperBuilderConfiguration, org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$JacksonObjectMapperConfiguration, org.springframework.boot.autoconfigure.jackson.JacksonAutoConfiguration$ParameterNamesModuleConfiguration, org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration$PooledDataSourceConfiguration, org.springframework.boot.autoconfigure.jdbc.DataSourceConfiguration$Hikari, org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.DataSourceTransactionManagerAutoConfiguration$JdbcTransactionManagerConfiguration, org.springframework.boot.autoconfigure.jdbc.JdbcClientAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.JdbcTemplateAutoConfiguration, org.springframework.boot.autoconfigure.jdbc.JdbcTemplateConfiguration, org.springframework.boot.autoconfigure.jdbc.NamedParameterJdbcTemplateConfiguration, org.springframework.boot.autoconfigure.jdbc.metadata.DataSourcePoolMetadataProvidersConfiguration, org.springframework.boot.autoconfigure.jdbc.metadata.DataSourcePoolMetadataProvidersConfiguration$HikariPoolDataSourceMetadataProviderConfiguration, org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaAutoConfiguration, org.springframework.boot.autoconfigure.orm.jpa.HibernateJpaConfiguration, org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$JpaWebConfiguration, org.springframework.boot.autoconfigure.orm.jpa.JpaBaseConfiguration$PersistenceManagedTypesConfiguration, org.springframework.boot.autoconfigure.reactor.ReactorAutoConfiguration, org.springframework.boot.autoconfigure.security.servlet.SecurityAutoConfiguration, org.springframework.boot.autoconfigure.security.servlet.SpringBootWebSecurityConfiguration, org.springframework.boot.autoconfigure.sql.init.DataSourceInitializationConfiguration, org.springframework.boot.autoconfigure.sql.init.SqlInitializationAutoConfiguration, org.springframework.boot.autoconfigure.ssl.SslAutoConfiguration, org.springframework.boot.autoconfigure.task.TaskExecutionAutoConfiguration, org.springframework.boot.autoconfigure.task.TaskExecutorConfigurations$SimpleAsyncTaskExecutorBuilderConfiguration, org.springframework.boot.autoconfigure.task.TaskExecutorConfigurations$TaskExecutorBuilderConfiguration, org.springframework.boot.autoconfigure.task.TaskExecutorConfigurations$TaskExecutorConfiguration, org.springframework.boot.autoconfigure.task.TaskExecutorConfigurations$ThreadPoolTaskExecutorBuilderConfiguration, org.springframework.boot.autoconfigure.task.TaskSchedulingAutoConfiguration, org.springframework.boot.autoconfigure.task.TaskSchedulingConfigurations$SimpleAsyncTaskSchedulerBuilderConfiguration, org.springframework.boot.autoconfigure.task.TaskSchedulingConfigurations$TaskSchedulerBuilderConfiguration, org.springframework.boot.autoconfigure.task.TaskSchedulingConfigurations$ThreadPoolTaskSchedulerBuilderConfiguration, org.springframework.boot.autoconfigure.transaction.TransactionAutoConfiguration, org.springframework.boot.autoconfigure.transaction.TransactionAutoConfiguration$EnableTransactionManagementConfiguration, org.springframework.boot.autoconfigure.transaction.TransactionAutoConfiguration$EnableTransactionManagementConfiguration$CglibAutoProxyConfiguration, org.springframework.boot.autoconfigure.transaction.TransactionAutoConfiguration$TransactionTemplateConfiguration, org.springframework.boot.autoconfigure.transaction.TransactionManagerCustomizationAutoConfiguration, org.springframework.boot.autoconfigure.transaction.jta.JtaAutoConfiguration, org.springframework.boot.autoconfigure.validation.ValidationAutoConfiguration, org.springframework.boot.autoconfigure.web.client.RestClientAutoConfiguration, org.springframework.boot.autoconfigure.web.client.RestTemplateAutoConfiguration, org.springframework.boot.autoconfigure.web.servlet.DispatcherServletAutoConfiguration, org.springframework.boot.autoconfigure.web.servlet.DispatcherServletAutoConfiguration$DispatcherServletConfiguration, org.springframework.boot.autoconfigure.web.servlet.DispatcherServletAutoConfiguration$DispatcherServletRegistrationConfiguration, org.springframework.boot.autoconfigure.web.servlet.HttpEncodingAutoConfiguration, org.springframework.boot.autoconfigure.web.servlet.MultipartAutoConfiguration, org.springframework.boot.autoconfigure.web.servlet.ServletWebServerFactoryAutoConfiguration, org.springframework.boot.autoconfigure.web.servlet.ServletWebServerFactoryConfiguration$EmbeddedTomcat, org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration, org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$EnableWebMvcConfiguration, org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration$WebMvcAutoConfigurationAdapter, org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConfiguration, org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConfiguration$DefaultErrorViewResolverConfiguration, org.springframework.boot.autoconfigure.web.servlet.error.ErrorMvcAutoConfiguration$WhitelabelErrorViewConfiguration, org.springframework.boot.autoconfigure.websocket.servlet.WebSocketServletAutoConfiguration, org.springframework.boot.autoconfigure.websocket.servlet.WebSocketServletAutoConfiguration$TomcatWebSocketConfiguration, org.springframework.boot.context.internalConfigurationPropertiesBinder, org.springframework.boot.context.properties.BoundConfigurationProperties, org.springframework.boot.context.properties.ConfigurationPropertiesBindingPostProcessor, org.springframework.boot.context.properties.EnableConfigurationPropertiesRegistrar.methodValidationExcludeFilter, org.springframework.boot.sql.init.dependency.DatabaseInitializationDependencyConfigurer$DependsOnDatabaseInitializationPostProcessor, org.springframework.boot.test.mock.mockito.MockitoPostProcessor, org.springframework.boot.test.mock.mockito.MockitoPostProcessor$SpyPostProcessor, org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration, org.springframework.cloud.autoconfigure.LifecycleMvcEndpointAutoConfiguration, org.springframework.cloud.autoconfigure.PauseResumeEndpointsConfiguration, org.springframework.cloud.autoconfigure.RefreshAutoConfiguration, org.springframework.cloud.autoconfigure.RefreshAutoConfiguration$RefreshScopeBeanDefinitionEnhancer, org.springframework.cloud.autoconfigure.RefreshEndpointAutoConfiguration, org.springframework.cloud.autoconfigure.RefreshEndpointAutoConfiguration$RefreshEndpointConfiguration, org.springframework.cloud.autoconfigure.RestartEndpointWithoutIntegrationConfiguration, org.springframework.cloud.client.CommonsClientAutoConfiguration, org.springframework.cloud.client.CommonsClientAutoConfiguration$ActuatorConfiguration, org.springframework.cloud.client.CommonsClientAutoConfiguration$DiscoveryLoadBalancerConfiguration, org.springframework.cloud.client.ReactiveCommonsClientAutoConfiguration, org.springframework.cloud.client.discovery.composite.CompositeDiscoveryClientAutoConfiguration, org.springframework.cloud.client.discovery.simple.SimpleDiscoveryClientAutoConfiguration, org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration, org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig, org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$LoadBalancerInterceptorConfig, org.springframework.cloud.client.loadbalancer.LoadBalancerDefaultMappingsProviderAutoConfiguration, org.springframework.cloud.client.serviceregistry.AutoServiceRegistrationAutoConfiguration, org.springframework.cloud.client.serviceregistry.AutoServiceRegistrationConfiguration, org.springframework.cloud.client.serviceregistry.ServiceRegistryAutoConfiguration, org.springframework.cloud.client.serviceregistry.ServiceRegistryAutoConfiguration$ServiceRegistryEndpointConfiguration, org.springframework.cloud.commons.config.CommonsConfigAutoConfiguration, org.springframework.cloud.commons.security.ResourceServerTokenRelayAutoConfiguration, org.springframework.cloud.commons.security.ResourceServerTokenRelayAutoConfiguration$ResourceServerTokenRelayRegistrationAutoConfiguration, org.springframework.cloud.commons.util.UtilAutoConfiguration, org.springframework.cloud.configuration.CompatibilityVerifierAutoConfiguration, org.springframework.cloud.loadbalancer.config.BlockingLoadBalancerClientAutoConfiguration, org.springframework.cloud.loadbalancer.config.LoadBalancerAutoConfiguration, org.springframework.cloud.loadbalancer.config.LoadBalancerCacheAutoConfiguration, org.springframework.cloud.loadbalancer.config.LoadBalancerCacheAutoConfiguration$DefaultLoadBalancerCacheManagerConfiguration, org.springframework.cloud.loadbalancer.config.LoadBalancerCacheAutoConfiguration$LoadBalancerCacheManagerWarnConfiguration, org.springframework.cloud.netflix.eureka.EurekaClientAutoConfiguration, org.springframework.cloud.netflix.eureka.EurekaClientAutoConfiguration$EurekaHealthIndicatorConfiguration, org.springframework.cloud.netflix.eureka.EurekaClientAutoConfiguration$RefreshableEurekaClientConfiguration, org.springframework.cloud.netflix.eureka.EurekaDiscoveryClientConfiguration, org.springframework.cloud.netflix.eureka.EurekaDiscoveryClientConfiguration$EurekaClientConfigurationRefresher, org.springframework.cloud.netflix.eureka.EurekaDiscoveryClientConfiguration$EurekaHealthCheckHandlerConfiguration, org.springframework.cloud.netflix.eureka.config.DiscoveryClientOptionalArgsConfiguration, org.springframework.cloud.netflix.eureka.loadbalancer.LoadBalancerEurekaAutoConfiguration, org.springframework.cloud.openfeign.FeignAutoConfiguration, org.springframework.cloud.openfeign.FeignAutoConfiguration$DefaultFeignTargeterConfiguration, org.springframework.cloud.openfeign.FeignAutoConfiguration$FeignJacksonConfiguration, org.springframework.cloud.openfeign.loadbalancer.DefaultFeignLoadBalancerConfiguration, org.springframework.cloud.openfeign.loadbalancer.FeignLoadBalancerAutoConfiguration, org.springframework.context.annotation.internalAutowiredAnnotationProcessor, org.springframework.context.annotation.internalCommonAnnotationProcessor, org.springframework.context.annotation.internalConfigurationAnnotationProcessor, org.springframework.context.annotation.internalPersistenceAnnotationProcessor, org.springframework.context.event.internalEventListenerFactory, org.springframework.context.event.internalEventListenerProcessor, org.springframework.data.jpa.repository.support.JpaEvaluationContextExtension, org.springframework.data.jpa.util.JpaMetamodelCacheCleanup, org.springframework.data.web.config.ProjectingArgumentResolverRegistrar, org.springframework.data.web.config.SpringDataJacksonConfiguration, org.springframework.data.web.config.SpringDataWebConfiguration, org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration, org.springframework.transaction.config.internalTransactionAdvisor, org.springframework.transaction.config.internalTransactionalEventListenerFactory, pageJacksonModule, pageModule, pageableCustomizer, pageableResolver, parameterNamesModule, pathMappedEndpoints, persistenceExceptionTranslationPostProcessor, persistenceManagedTypes, pingHealthContributor, platformTransactionManagerCustomizers, pregledController, pregledRepository, pregledService, preserveErrorControllerTargetClassPostProcessor, processorMetrics, projectingArgumentResolverBeanPostProcessor, propertiesMeterFilter, propertiesObservationFilter, propertySourcesPlaceholderConfigurer, reactiveHealthContributorRegistry, refreshEventListener, refreshScope, refreshScopeHealthIndicator, refreshScopeLifecycle, repositoryTagsProvider, requestContextFilter, requestMappingHandlerAdapter, requestMappingHandlerMapping, requestMatcherProvider, resourceHandlerMapping, restClientBuilder, restClientBuilderConfigurer, restClientSsl, restTemplate, restTemplateBuilder, restTemplateBuilderConfigurer, restTemplateCustomizer, restTemplateDiscoveryClientOptionalArgs, restTemplateTransportClientFactories, routerFunctionMapping, scopedTarget.eurekaApplicationInfoManager, scopedTarget.eurekaClient, scopedTarget.eurekaRegistration, server-org.springframework.boot.autoconfigure.web.ServerProperties, serviceManagementMetadataProvider, servletEndpointDiscoverer, servletEndpointRegistrar, servletExposeExcludePropertyEndpointFilter, servletWebChildContextFactory, servletWebServerFactoryCustomizer, simpleAsyncTaskExecutorBuilder, simpleAsyncTaskSchedulerBuilder, simpleConfig, simpleControllerHandlerAdapter, simpleDiscoveryClient, simpleDiscoveryProperties, simpleMeterRegistry, sleuthPresentVerifier, sortCustomizer, sortModule, sortResolver, spring.cloud.compatibility-verifier-org.springframework.cloud.configuration.CompatibilityVerifierProperties, spring.cloud.discovery.client.health-indicator-org.springframework.cloud.client.discovery.health.DiscoveryClientHealthIndicatorProperties, spring.cloud.loadbalancer-org.springframework.cloud.client.loadbalancer.LoadBalancerClientsProperties, spring.cloud.loadbalancer.cache-org.springframework.cloud.loadbalancer.cache.LoadBalancerCacheProperties, spring.cloud.loadbalancer.eager-load-org.springframework.cloud.client.loadbalancer.LoadBalancerEagerLoadProperties, spring.cloud.openfeign.client-org.springframework.cloud.openfeign.FeignClientProperties, spring.cloud.openfeign.encoder-org.springframework.cloud.openfeign.support.FeignEncoderProperties, spring.cloud.openfeign.httpclient-org.springframework.cloud.openfeign.support.FeignHttpClientProperties, spring.cloud.refresh-org.springframework.cloud.autoconfigure.RefreshAutoConfiguration$RefreshProperties, spring.cloud.service-registry.auto-registration-org.springframework.cloud.client.serviceregistry.AutoServiceRegistrationProperties, spring.data.web-org.springframework.boot.autoconfigure.data.web.SpringDataWebProperties, spring.datasource-org.springframework.boot.autoconfigure.jdbc.DataSourceProperties, spring.gson-org.springframework.boot.autoconfigure.gson.GsonProperties, spring.info-org.springframework.boot.autoconfigure.info.ProjectInfoProperties, spring.jackson-org.springframework.boot.autoconfigure.jackson.JacksonProperties, spring.jdbc-org.springframework.boot.autoconfigure.jdbc.JdbcProperties, spring.jpa-org.springframework.boot.autoconfigure.orm.jpa.JpaProperties, spring.jpa.hibernate-org.springframework.boot.autoconfigure.orm.jpa.HibernateProperties, spring.lifecycle-org.springframework.boot.autoconfigure.context.LifecycleProperties, spring.mvc-org.springframework.boot.autoconfigure.web.servlet.WebMvcProperties, spring.reactor-org.springframework.boot.autoconfigure.reactor.ReactorProperties, spring.security-org.springframework.boot.autoconfigure.security.SecurityProperties, spring.servlet.multipart-org.springframework.boot.autoconfigure.web.servlet.MultipartProperties, spring.sql.init-org.springframework.boot.autoconfigure.sql.init.SqlInitializationProperties, spring.ssl-org.springframework.boot.autoconfigure.ssl.SslProperties, spring.task.execution-org.springframework.boot.autoconfigure.task.TaskExecutionProperties, spring.task.scheduling-org.springframework.boot.autoconfigure.task.TaskSchedulingProperties, spring.transaction-org.springframework.boot.autoconfigure.transaction.TransactionProperties, spring.web-org.springframework.boot.autoconfigure.web.WebProperties, springBootVersionVerifier, springCloudCommonsFeatures, sslBundleRegistry, sslPropertiesSslBundleRegistrar, standardGsonBuilderCustomizer, standardJacksonObjectMapperBuilderCustomizer, startupTimeMetrics, stringHttpMessageConverter, taskExecutorBuilder, taskSchedulerBuilder, terminController, terminRepository, terminService, terminiPreglediApplication, themeResolver, threadPoolTaskExecutorBuilder, threadPoolTaskSchedulerBuilder, tlsProperties, tomcatMetricsBinder, tomcatServletWebServerFactory, tomcatServletWebServerFactoryCustomizer, transactionAttributeSource, transactionExecutionListeners, transactionInterceptor, transactionManager, transactionTemplate, uptimeMetrics, viewControllerHandlerMapping, viewNameTranslator, viewResolver, webEndpointDiscoverer, webEndpointPathMapper, webEndpointServletHandlerMapping, webExposeExcludePropertyEndpointFilter, webMvcObservationFilter, webServerFactoryCustomizerBeanPostProcessor, websocketServletWebServerCustomizer, welcomePageHandlerMapping, welcomePageNotAcceptableHandlerMapping, xForwarderHeadersFeignTransformer, xForwarderHeadersTransformer, zoneConfig]
+2025-06-20T03:56:10.766+02:00  INFO 34304 --- [termini-pregledi-test] [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=e55793bc-1b7b-3261-91f6-961dbc709f1d
+2025-06-20T03:56:11.950+02:00  WARN 34304 --- [termini-pregledi-test] [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig' of type [org.springframework.cloud.client.loadbalancer.LoadBalancerAutoConfiguration$DeferringLoadBalancerInterceptorConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). The currently created BeanPostProcessor [lbRestClientPostProcessor] is declared through a non-static factory method on that class; consider declaring it as static instead.
+2025-06-20T03:56:11.956+02:00  WARN 34304 --- [termini-pregledi-test] [           main] trationDelegate$BeanPostProcessorChecker : Bean 'deferringLoadBalancerInterceptor' of type [org.springframework.cloud.client.loadbalancer.DeferringLoadBalancerInterceptor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying). Is this bean getting eagerly injected into a currently created BeanPostProcessor [lbRestClientPostProcessor]? Check the corresponding BeanPostProcessor declaration and its dependencies.
+2025-06-20T03:56:12.490+02:00  INFO 34304 --- [termini-pregledi-test] [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-06-20T03:56:12.690+02:00  INFO 34304 --- [termini-pregledi-test] [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.4.Final
+2025-06-20T03:56:12.840+02:00  INFO 34304 --- [termini-pregledi-test] [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2025-06-20T03:56:13.609+02:00  INFO 34304 --- [termini-pregledi-test] [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-06-20T03:56:13.667+02:00  WARN 34304 --- [termini-pregledi-test] [           main] com.zaxxer.hikari.HikariConfig           : HikariPool-1 - idleTimeout has been set but has no effect because the pool is operating as a fixed size pool.
+2025-06-20T03:56:13.667+02:00  INFO 34304 --- [termini-pregledi-test] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2025-06-20T03:56:14.077+02:00  INFO 34304 --- [termini-pregledi-test] [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2025-06-20T03:56:14.080+02:00  INFO 34304 --- [termini-pregledi-test] [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2025-06-20T03:56:14.122+02:00  WARN 34304 --- [termini-pregledi-test] [           main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-06-20T03:56:15.748+02:00  INFO 34304 --- [termini-pregledi-test] [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-06-20T03:56:15.779+02:00 DEBUG 34304 --- [termini-pregledi-test] [           main] org.hibernate.SQL                        : 
+    drop table if exists pregled cascade 
+Hibernate: 
+    drop table if exists pregled cascade 
+2025-06-20T03:56:15.785+02:00 DEBUG 34304 --- [termini-pregledi-test] [           main] org.hibernate.SQL                        : 
+    drop table if exists termin cascade 
+Hibernate: 
+    drop table if exists termin cascade 
+2025-06-20T03:56:15.793+02:00 DEBUG 34304 --- [termini-pregledi-test] [           main] org.hibernate.SQL                        : 
+    create table pregled (
+        datum_pregleda date not null,
+        doktorid integer not null,
+        ocjena_doktora float(53),
+        pacijentid integer not null,
+        pregledid integer generated by default as identity,
+        terminid integer not null,
+        vrijeme_pregleda time(6) not null,
+        komentar_pacijenta varchar(255),
+        status varchar(255) not null check (status in ('zakazan','obavljen','otkazan')),
+        primary key (pregledid)
+    )
+Hibernate: 
+    create table pregled (
+        datum_pregleda date not null,
+        doktorid integer not null,
+        ocjena_doktora float(53),
+        pacijentid integer not null,
+        pregledid integer generated by default as identity,
+        terminid integer not null,
+        vrijeme_pregleda time(6) not null,
+        komentar_pacijenta varchar(255),
+        status varchar(255) not null check (status in ('zakazan','obavljen','otkazan')),
+        primary key (pregledid)
+    )
+2025-06-20T03:56:15.813+02:00 DEBUG 34304 --- [termini-pregledi-test] [           main] org.hibernate.SQL                        : 
+    create table termin (
+        datum date not null,
+        doktorid integer not null,
+        terminid integer generated by default as identity,
+        vrijeme time(6) not null,
+        status_termina varchar(255) not null check (status_termina in ('DOSTUPAN','ZAKAZAN','OTKAZAN')),
+        primary key (terminid)
+    )
+Hibernate: 
+    create table termin (
+        datum date not null,
+        doktorid integer not null,
+        terminid integer generated by default as identity,
+        vrijeme time(6) not null,
+        status_termina varchar(255) not null check (status_termina in ('DOSTUPAN','ZAKAZAN','OTKAZAN')),
+        primary key (terminid)
+    )
+2025-06-20T03:56:15.815+02:00 DEBUG 34304 --- [termini-pregledi-test] [           main] org.hibernate.SQL                        : 
+    alter table if exists pregled 
+       add constraint FKqs3023f02wx4eb1o2xa61l5o7 
+       foreign key (terminid) 
+       references termin
+Hibernate: 
+    alter table if exists pregled 
+       add constraint FKqs3023f02wx4eb1o2xa61l5o7 
+       foreign key (terminid) 
+       references termin
+2025-06-20T03:56:15.836+02:00  INFO 34304 --- [termini-pregledi-test] [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-06-20T03:56:16.081+02:00 DEBUG 34304 --- [termini-pregledi-test] [           main] .n.e.m.DefaultManagementMetadataProvider : Constructed eureka meta-data healthcheckUrl: http://localhost:8083/termini-pregledi/actuator/health
+2025-06-20T03:56:16.081+02:00 DEBUG 34304 --- [termini-pregledi-test] [           main] .n.e.m.DefaultManagementMetadataProvider : Constructed eureka meta-data statusPageUrl: http://localhost:8083/termini-pregledi/actuator/info
+2025-06-20T03:56:16.868+02:00 DEBUG 34304 --- [termini-pregledi-test] [           main] o.h.stat.internal.StatisticsInitiator    : Statistics initialized [enabled=true]
+2025-06-20T03:56:16.880+02:00  INFO 34304 --- [termini-pregledi-test] [           main] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2025-06-20T03:56:16.883+02:00  INFO 34304 --- [termini-pregledi-test] [           main] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2025-06-20T03:56:17.056+02:00  INFO 34304 --- [termini-pregledi-test] [           main] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2025-06-20T03:56:17.217+02:00  INFO 34304 --- [termini-pregledi-test] [           main] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2025-06-20T03:56:17.224+02:00  INFO 34304 --- [termini-pregledi-test] [           main] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2025-06-20T03:56:17.411+02:00  INFO 34304 --- [termini-pregledi-test] [           main] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2025-06-20T03:56:17.412+02:00  INFO 34304 --- [termini-pregledi-test] [           main] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2025-06-20T03:56:17.415+02:00  INFO 34304 --- [termini-pregledi-test] [           main] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2025-06-20T03:56:17.415+02:00  INFO 34304 --- [termini-pregledi-test] [           main] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2025-06-20T03:56:17.419+02:00  INFO 34304 --- [termini-pregledi-test] [           main] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2025-06-20T03:56:17.420+02:00  INFO 34304 --- [termini-pregledi-test] [           main] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2025-06-20T03:56:17.427+02:00  INFO 34304 --- [termini-pregledi-test] [           main] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2025-06-20T03:56:17.428+02:00  INFO 34304 --- [termini-pregledi-test] [           main] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2025-06-20T03:56:17.430+02:00  INFO 34304 --- [termini-pregledi-test] [           main] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2025-06-20T03:56:17.431+02:00  INFO 34304 --- [termini-pregledi-test] [           main] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2025-06-20T03:56:17.437+02:00  INFO 34304 --- [termini-pregledi-test] [           main] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2025-06-20T03:56:17.438+02:00  INFO 34304 --- [termini-pregledi-test] [           main] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2025-06-20T03:56:17.478+02:00  INFO 34304 --- [termini-pregledi-test] [           main] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2025-06-20T03:56:17.481+02:00  INFO 34304 --- [termini-pregledi-test] [           main] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2025-06-20T03:56:17.529+02:00  INFO 34304 --- [termini-pregledi-test] [           main] o.s.d.j.r.query.QueryEnhancerFactory     : Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-06-20T03:56:18.134+02:00  INFO 34304 --- [termini-pregledi-test] [           main] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2025-06-20T03:56:18.138+02:00  INFO 34304 --- [termini-pregledi-test] [           main] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2025-06-20T03:56:18.949+02:00  INFO 34304 --- [termini-pregledi-test] [           main] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2025-06-20T03:56:18.956+02:00  INFO 34304 --- [termini-pregledi-test] [           main] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2025-06-20T03:56:18.957+02:00  INFO 34304 --- [termini-pregledi-test] [           main] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2025-06-20T03:56:18.963+02:00  INFO 34304 --- [termini-pregledi-test] [           main] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2025-06-20T03:56:18.972+02:00  INFO 34304 --- [termini-pregledi-test] [           main] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2025-06-20T03:56:18.973+02:00  INFO 34304 --- [termini-pregledi-test] [           main] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2025-06-20T03:56:18.997+02:00  INFO 34304 --- [termini-pregledi-test] [           main] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2025-06-20T03:56:19.002+02:00  INFO 34304 --- [termini-pregledi-test] [           main] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2025-06-20T03:56:19.003+02:00  INFO 34304 --- [termini-pregledi-test] [           main] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2025-06-20T03:56:19.012+02:00  INFO 34304 --- [termini-pregledi-test] [           main] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2025-06-20T03:56:19.015+02:00  INFO 34304 --- [termini-pregledi-test] [           main] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2025-06-20T03:56:19.015+02:00  INFO 34304 --- [termini-pregledi-test] [           main] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2025-06-20T03:56:19.020+02:00  INFO 34304 --- [termini-pregledi-test] [           main] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2025-06-20T03:56:19.020+02:00  INFO 34304 --- [termini-pregledi-test] [           main] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2025-06-20T03:56:19.025+02:00  INFO 34304 --- [termini-pregledi-test] [           main] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2025-06-20T03:56:19.026+02:00  INFO 34304 --- [termini-pregledi-test] [           main] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    0 nanoseconds spent acquiring 0 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    0 nanoseconds spent preparing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2025-06-20T03:56:19.744+02:00  INFO 34304 --- [termini-pregledi-test] [           main] DiscoveryClientOptionalArgsConfiguration : Eureka HTTP Client uses RestTemplate.
+2025-06-20T03:56:19.811+02:00  INFO 34304 --- [termini-pregledi-test] [           main] o.s.c.n.eureka.InstanceInfoFactory       : Setting initial instance status as: STARTING
+2025-06-20T03:56:20.161+02:00  INFO 34304 --- [termini-pregledi-test] [           main] com.netflix.discovery.DiscoveryClient    : Initializing Eureka in region us-east-1
+2025-06-20T03:56:20.183+02:00  INFO 34304 --- [termini-pregledi-test] [           main] c.n.d.s.r.aws.ConfigClusterResolver      : Resolving eureka endpoints via configuration
+2025-06-20T03:56:20.185+02:00 DEBUG 34304 --- [termini-pregledi-test] [           main] c.n.discovery.endpoint.EndpointUtils     : The availability zone for the given region us-east-1 are [defaultZone]
+2025-06-20T03:56:20.190+02:00 DEBUG 34304 --- [termini-pregledi-test] [           main] c.n.d.s.r.aws.ConfigClusterResolver      : Config resolved to [AwsEndpoint{ serviceUrl='http://localhost:8761/eureka/', region='us-east-1', zone='defaultZone'}]
+2025-06-20T03:56:20.191+02:00 DEBUG 34304 --- [termini-pregledi-test] [           main] c.n.d.s.r.a.ZoneAffinityClusterResolver  : Local zone=defaultZone; resolved to: [AwsEndpoint{ serviceUrl='http://localhost:8761/eureka/', region='us-east-1', zone='defaultZone'}]
+2025-06-20T03:56:20.259+02:00  INFO 34304 --- [termini-pregledi-test] [           main] com.netflix.discovery.DiscoveryClient    : Disable delta property : false
+2025-06-20T03:56:20.260+02:00  INFO 34304 --- [termini-pregledi-test] [           main] com.netflix.discovery.DiscoveryClient    : Single vip registry refresh property : null
+2025-06-20T03:56:20.260+02:00  INFO 34304 --- [termini-pregledi-test] [           main] com.netflix.discovery.DiscoveryClient    : Force full registry fetch : false
+2025-06-20T03:56:20.260+02:00  INFO 34304 --- [termini-pregledi-test] [           main] com.netflix.discovery.DiscoveryClient    : Application is null : false
+2025-06-20T03:56:20.260+02:00  INFO 34304 --- [termini-pregledi-test] [           main] com.netflix.discovery.DiscoveryClient    : Registered Applications size is zero : true
+2025-06-20T03:56:20.261+02:00  INFO 34304 --- [termini-pregledi-test] [           main] com.netflix.discovery.DiscoveryClient    : Application version is -1: true
+2025-06-20T03:56:20.261+02:00  INFO 34304 --- [termini-pregledi-test] [           main] com.netflix.discovery.DiscoveryClient    : Getting all instance registry info from the eureka server
+2025-06-20T03:56:20.262+02:00 DEBUG 34304 --- [termini-pregledi-test] [           main] c.n.d.s.t.d.SessionedEurekaHttpClient    : Ending a session and starting anew
+2025-06-20T03:56:20.799+02:00 DEBUG 34304 --- [termini-pregledi-test] [           main] o.s.web.client.RestTemplate              : HTTP GET http://localhost:8761/eureka/apps/
+2025-06-20T03:56:21.065+02:00 DEBUG 34304 --- [termini-pregledi-test] [           main] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2025-06-20T03:56:21.191+02:00 DEBUG 34304 --- [termini-pregledi-test] [           main] o.s.web.client.RestTemplate              : Response 200 OK
+2025-06-20T03:56:21.197+02:00 DEBUG 34304 --- [termini-pregledi-test] [           main] o.s.web.client.RestTemplate              : Reading to [org.springframework.cloud.netflix.eureka.http.EurekaApplications]
+2025-06-20T03:56:21.272+02:00 DEBUG 34304 --- [termini-pregledi-test] [           main] c.n.d.s.t.d.RedirectingEurekaHttpClient  : Pinning to endpoint null
+2025-06-20T03:56:21.277+02:00  INFO 34304 --- [termini-pregledi-test] [           main] com.netflix.discovery.DiscoveryClient    : The response status is 200
+2025-06-20T03:56:21.279+02:00 DEBUG 34304 --- [termini-pregledi-test] [           main] com.netflix.discovery.DiscoveryClient    : Got full registry with apps hashcode UP_3_
+2025-06-20T03:56:21.280+02:00 DEBUG 34304 --- [termini-pregledi-test] [           main] com.netflix.discovery.DiscoveryClient    : The total number of all instances in the client now is 3
+2025-06-20T03:56:21.285+02:00  INFO 34304 --- [termini-pregledi-test] [           main] com.netflix.discovery.DiscoveryClient    : Starting heartbeat executor: renew interval is: 10
+2025-06-20T03:56:21.293+02:00  INFO 34304 --- [termini-pregledi-test] [           main] c.n.discovery.InstanceInfoReplicator     : InstanceInfoReplicator onDemand update allowed rate per min is 4
+2025-06-20T03:56:21.307+02:00  INFO 34304 --- [termini-pregledi-test] [           main] com.netflix.discovery.DiscoveryClient    : Discovery Client initialized at timestamp 1750384581305 with initial instances count: 3
+2025-06-20T03:56:21.308+02:00 DEBUG 34304 --- [termini-pregledi-test] [nfoReplicator-0] c.n.discovery.InstanceInfoReplicator     : Executing on-demand update of local InstanceInfo
+2025-06-20T03:56:21.309+02:00 DEBUG 34304 --- [termini-pregledi-test] [nfoReplicator-0] c.n.discovery.InstanceInfoReplicator     : Canceling the latest scheduled update, it will be rescheduled at the end of on demand update
+2025-06-20T03:56:21.326+02:00  INFO 34304 --- [termini-pregledi-test] [           main] o.s.c.n.e.s.EurekaServiceRegistry        : Registering application TERMINI-PREGLEDI-TEST with eureka with status UP
+2025-06-20T03:56:21.328+02:00  INFO 34304 --- [termini-pregledi-test] [           main] com.netflix.discovery.DiscoveryClient    : Saw local status change event StatusChangeEvent [timestamp=1750384581328, current=UP, previous=STARTING]
+2025-06-20T03:56:21.352+02:00  WARN 34304 --- [termini-pregledi-test] [           main] c.n.discovery.InstanceInfoReplicator     : Ignoring onDemand update due to rate limiter
+2025-06-20T03:56:21.355+02:00 DEBUG 34304 --- [termini-pregledi-test] [           main] s.c.c.d.h.DiscoveryClientHealthIndicator : Discovery Client has been initialized
+2025-06-20T03:56:21.370+02:00  INFO 34304 --- [termini-pregledi-test] [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_TERMINI-PREGLEDI-TEST/termini-pregledi-test:127.0.0.1:8083: registering service...
+2025-06-20T03:56:21.372+02:00 DEBUG 34304 --- [termini-pregledi-test] [nfoReplicator-0] c.n.d.s.t.d.SessionedEurekaHttpClient    : Ending a session and starting anew
+2025-06-20T03:56:21.388+02:00 DEBUG 34304 --- [termini-pregledi-test] [nfoReplicator-0] o.s.web.client.RestTemplate              : HTTP POST http://localhost:8761/eureka/apps/TERMINI-PREGLEDI-TEST
+2025-06-20T03:56:21.399+02:00 DEBUG 34304 --- [termini-pregledi-test] [nfoReplicator-0] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2025-06-20T03:56:21.479+02:00 DEBUG 34304 --- [termini-pregledi-test] [nfoReplicator-0] o.s.web.client.RestTemplate              : Writing [InstanceInfo [instanceId = termini-pregledi-test:127.0.0.1:8083, appName = TERMINI-PREGLEDI-TEST, hostName = localhost, status = UP, ipAddr = 127.0.0.1, port = 8083, securePort = 443, dataCenterInfo = com.netflix.appinfo.MyDataCenterInfo@4feea86f] as "application/json"
+2025-06-20T03:56:21.517+02:00  WARN 34304 --- [termini-pregledi-test] [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2025-06-20T03:56:21.542+02:00 DEBUG 34304 --- [termini-pregledi-test] [nfoReplicator-0] o.s.web.client.RestTemplate              : Response 204 NO_CONTENT
+2025-06-20T03:56:21.543+02:00 DEBUG 34304 --- [termini-pregledi-test] [nfoReplicator-0] c.n.d.s.t.d.RedirectingEurekaHttpClient  : Pinning to endpoint null
+2025-06-20T03:56:21.543+02:00  INFO 34304 --- [termini-pregledi-test] [nfoReplicator-0] com.netflix.discovery.DiscoveryClient    : DiscoveryClient_TERMINI-PREGLEDI-TEST/termini-pregledi-test:127.0.0.1:8083 - registration status: 204
+2025-06-20T03:56:21.544+02:00 DEBUG 34304 --- [termini-pregledi-test] [nfoReplicator-0] c.n.discovery.InstanceInfoReplicator     : Executing on-demand update of local InstanceInfo
+2025-06-20T03:56:21.544+02:00 DEBUG 34304 --- [termini-pregledi-test] [nfoReplicator-0] c.n.discovery.InstanceInfoReplicator     : Canceling the latest scheduled update, it will be rescheduled at the end of on demand update
+2025-06-20T03:56:22.062+02:00 DEBUG 34304 --- [termini-pregledi-test] [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : 23 mappings in 'requestMappingHandlerMapping'
+2025-06-20T03:56:22.455+02:00 DEBUG 34304 --- [termini-pregledi-test] [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2025-06-20T03:56:22.755+02:00  INFO 34304 --- [termini-pregledi-test] [           main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 3 endpoint(s) beneath base path '/actuator'
+2025-06-20T03:56:22.792+02:00  INFO 34304 --- [termini-pregledi-test] [           main] c.m.r.t.TerminiPreglediApplicationTests  : Started TerminiPreglediApplicationTests in 18.063 seconds (process running for 20.906)
+Pokrećem DataLoader za Termini-Pregledi servis...
+2025-06-20T03:56:23.113+02:00 DEBUG 34304 --- [termini-pregledi-test] [           main] org.hibernate.SQL                        : 
+    /* select
+        count(*) 
+    from
+        Termin x */ select
+            count(*) 
+        from
+            termin t1_0
+Hibernate: 
+    /* select
+        count(*) 
+    from
+        Termin x */ select
+            count(*) 
+        from
+            termin t1_0
+2025-06-20T03:56:23.171+02:00 DEBUG 34304 --- [termini-pregledi-test] [           main] o.h.stat.internal.StatisticsImpl         : HHH000117: HQL: select count(*) from Termin x, time: 84ms, rows: 1
+2025-06-20T03:56:23.185+02:00  INFO 34304 --- [termini-pregledi-test] [           main] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    87800 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    9655000 nanoseconds spent preparing 1 JDBC statements;
+    12415600 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    559900 nanoseconds spent executing 1 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+2025-06-20T03:56:23.189+02:00 DEBUG 34304 --- [termini-pregledi-test] [           main] org.hibernate.SQL                        : 
+    /* select
+        count(*) 
+    from
+        Pregled x */ select
+            count(*) 
+        from
+            pregled p1_0
+Hibernate: 
+    /* select
+        count(*) 
+    from
+        Pregled x */ select
+            count(*) 
+        from
+            pregled p1_0
+2025-06-20T03:56:23.190+02:00 DEBUG 34304 --- [termini-pregledi-test] [           main] o.h.stat.internal.StatisticsImpl         : HHH000117: HQL: select count(*) from Pregled x, time: 1ms, rows: 1
+2025-06-20T03:56:23.191+02:00  INFO 34304 --- [termini-pregledi-test] [           main] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    32300 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    347900 nanoseconds spent preparing 1 JDBC statements;
+    244300 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    0 nanoseconds spent executing 0 flushes (flushing a total of 0 entities and 0 collections);
+    6000 nanoseconds spent executing 1 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+[DataLoader] Pokušavam dohvatiti doktore iz: http://KORISNICI-DOKTORI/korisnici-doktori/api/doktori
+2025-06-20T03:56:23.194+02:00 DEBUG 34304 --- [termini-pregledi-test] [           main] o.s.web.client.RestTemplate              : HTTP GET http://KORISNICI-DOKTORI/korisnici-doktori/api/doktori
+2025-06-20T03:56:23.195+02:00 DEBUG 34304 --- [termini-pregledi-test] [           main] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2025-06-20T03:56:23.297+02:00 DEBUG 34304 --- [termini-pregledi-test] [           main] .l.EurekaLoadBalancerClientConfiguration : Setting the value of 'spring.cloud.loadbalancer.zone' to defaultZone
+2025-06-20T03:56:23.690+02:00 DEBUG 34304 --- [termini-pregledi-test] [           main] o.s.web.client.RestTemplate              : Response 200 OK
+2025-06-20T03:56:23.691+02:00 DEBUG 34304 --- [termini-pregledi-test] [           main] o.s.web.client.RestTemplate              : Reading to [java.util.List<com.medicinska.rezervacija.termini_pregledi.dto.DoktorDTO>]
+[DataLoader] Pronađen doktorId1 (Doctor User): 1
+[DataLoader] Pronađen doktorId2 (drugi dostupni doktor): 2
+[DataLoader] Pokušavam dohvatiti pacijente iz: http://KORISNICI-DOKTORI/korisnici-doktori/api/pacijenti
+2025-06-20T03:56:23.710+02:00 DEBUG 34304 --- [termini-pregledi-test] [           main] o.s.web.client.RestTemplate              : HTTP GET http://KORISNICI-DOKTORI/korisnici-doktori/api/pacijenti
+2025-06-20T03:56:23.711+02:00 DEBUG 34304 --- [termini-pregledi-test] [           main] o.s.web.client.RestTemplate              : Accept=[application/json, application/*+json]
+2025-06-20T03:56:23.825+02:00 DEBUG 34304 --- [termini-pregledi-test] [           main] o.s.web.client.RestTemplate              : Response 200 OK
+2025-06-20T03:56:23.826+02:00 DEBUG 34304 --- [termini-pregledi-test] [           main] o.s.web.client.RestTemplate              : Reading to [java.util.List<com.medicinska.rezervacija.termini_pregledi.dto.PacijentDTO>]
+[DataLoader] Pronađen pacijentId1 (Patient User): 1
+[DataLoader] Pronađen pacijentId2 (drugi dostupni pacijent): 2
+[DataLoader] Kreiram termine...
+2025-06-20T03:56:24.008+02:00 DEBUG 34304 --- [termini-pregledi-test] [           main] org.hibernate.SQL                        : 
+    /* insert for
+        com.medicinska.rezervacija.termini_pregledi.model.Termin */insert 
+    into
+        termin (datum, doktorid, status_termina, vrijeme, terminid) 
+    values
+        (?, ?, ?, ?, default)
+Hibernate: 
+    /* insert for
+        com.medicinska.rezervacija.termini_pregledi.model.Termin */insert 
+    into
+        termin (datum, doktorid, status_termina, vrijeme, terminid) 
+    values
+        (?, ?, ?, ?, default)
+2025-06-20T03:56:24.092+02:00  INFO 34304 --- [termini-pregledi-test] [           main] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    84500 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    1621800 nanoseconds spent preparing 1 JDBC statements;
+    6678000 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    40326700 nanoseconds spent executing 1 flushes (flushing a total of 1 entities and 1 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+[DataLoader] Kreiran termin 1: ID=1, DoktorID=1
+2025-06-20T03:56:24.096+02:00 DEBUG 34304 --- [termini-pregledi-test] [           main] org.hibernate.SQL                        : 
+    /* insert for
+        com.medicinska.rezervacija.termini_pregledi.model.Termin */insert 
+    into
+        termin (datum, doktorid, status_termina, vrijeme, terminid) 
+    values
+        (?, ?, ?, ?, default)
+Hibernate: 
+    /* insert for
+        com.medicinska.rezervacija.termini_pregledi.model.Termin */insert 
+    into
+        termin (datum, doktorid, status_termina, vrijeme, terminid) 
+    values
+        (?, ?, ?, ?, default)
+2025-06-20T03:56:24.100+02:00  INFO 34304 --- [termini-pregledi-test] [           main] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    61300 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    159100 nanoseconds spent preparing 1 JDBC statements;
+    1238100 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    366400 nanoseconds spent executing 1 flushes (flushing a total of 1 entities and 1 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+[DataLoader] Kreiran termin 2: ID=2, DoktorID=1
+2025-06-20T03:56:24.103+02:00 DEBUG 34304 --- [termini-pregledi-test] [           main] org.hibernate.SQL                        : 
+    /* insert for
+        com.medicinska.rezervacija.termini_pregledi.model.Termin */insert 
+    into
+        termin (datum, doktorid, status_termina, vrijeme, terminid) 
+    values
+        (?, ?, ?, ?, default)
+Hibernate: 
+    /* insert for
+        com.medicinska.rezervacija.termini_pregledi.model.Termin */insert 
+    into
+        termin (datum, doktorid, status_termina, vrijeme, terminid) 
+    values
+        (?, ?, ?, ?, default)
+2025-06-20T03:56:24.107+02:00  INFO 34304 --- [termini-pregledi-test] [           main] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    70100 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    60100 nanoseconds spent preparing 1 JDBC statements;
+    1070400 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    410200 nanoseconds spent executing 1 flushes (flushing a total of 1 entities and 1 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+[DataLoader] Kreiran termin 3: ID=3, DoktorID=2
+[DataLoader] Kreiram preglede...
+2025-06-20T03:56:24.113+02:00 DEBUG 34304 --- [termini-pregledi-test] [           main] org.hibernate.SQL                        : 
+    /* insert for
+        com.medicinska.rezervacija.termini_pregledi.model.Pregled */insert 
+    into
+        pregled (datum_pregleda, doktorid, komentar_pacijenta, ocjena_doktora, pacijentid, status, terminid, vrijeme_pregleda, pregledid) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, default)
+Hibernate: 
+    /* insert for
+        com.medicinska.rezervacija.termini_pregledi.model.Pregled */insert 
+    into
+        pregled (datum_pregleda, doktorid, komentar_pacijenta, ocjena_doktora, pacijentid, status, terminid, vrijeme_pregleda, pregledid) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, default)
+2025-06-20T03:56:24.120+02:00  INFO 34304 --- [termini-pregledi-test] [           main] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    59100 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    405100 nanoseconds spent preparing 1 JDBC statements;
+    3306400 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    440200 nanoseconds spent executing 1 flushes (flushing a total of 1 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+[DataLoader] Kreiran pregled 1: ID=1
+2025-06-20T03:56:24.210+02:00 DEBUG 34304 --- [termini-pregledi-test] [           main] org.hibernate.SQL                        : 
+    select
+        t1_0.terminid,
+        t1_0.datum,
+        t1_0.doktorid,
+        t1_0.status_termina,
+        t1_0.vrijeme,
+        p1_0.terminid,
+        p1_0.pregledid,
+        p1_0.datum_pregleda,
+        p1_0.doktorid,
+        p1_0.komentar_pacijenta,
+        p1_0.ocjena_doktora,
+        p1_0.pacijentid,
+        p1_0.status,
+        p1_0.vrijeme_pregleda 
+    from
+        termin t1_0 
+    left join
+        pregled p1_0 
+            on t1_0.terminid=p1_0.terminid 
+    where
+        t1_0.terminid=?
+Hibernate: 
+    select
+        t1_0.terminid,
+        t1_0.datum,
+        t1_0.doktorid,
+        t1_0.status_termina,
+        t1_0.vrijeme,
+        p1_0.terminid,
+        p1_0.pregledid,
+        p1_0.datum_pregleda,
+        p1_0.doktorid,
+        p1_0.komentar_pacijenta,
+        p1_0.ocjena_doktora,
+        p1_0.pacijentid,
+        p1_0.status,
+        p1_0.vrijeme_pregleda 
+    from
+        termin t1_0 
+    left join
+        pregled p1_0 
+            on t1_0.terminid=p1_0.terminid 
+    where
+        t1_0.terminid=?
+2025-06-20T03:56:24.248+02:00 DEBUG 34304 --- [termini-pregledi-test] [           main] org.hibernate.SQL                        : 
+    /* update
+        for com.medicinska.rezervacija.termini_pregledi.model.Termin */update termin 
+    set
+        datum=?,
+        doktorid=?,
+        status_termina=?,
+        vrijeme=? 
+    where
+        terminid=?
+Hibernate: 
+    /* update
+        for com.medicinska.rezervacija.termini_pregledi.model.Termin */update termin 
+    set
+        datum=?,
+        doktorid=?,
+        status_termina=?,
+        vrijeme=? 
+    where
+        terminid=?
+2025-06-20T03:56:24.261+02:00  INFO 34304 --- [termini-pregledi-test] [           main] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    47900 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    6882900 nanoseconds spent preparing 2 JDBC statements;
+    1641800 nanoseconds spent executing 2 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    31146500 nanoseconds spent executing 1 flushes (flushing a total of 2 entities and 1 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+[DataLoader] Termin 1 ažuriran: Status = ZAKAZAN
+2025-06-20T03:56:24.264+02:00 DEBUG 34304 --- [termini-pregledi-test] [           main] org.hibernate.SQL                        : 
+    /* insert for
+        com.medicinska.rezervacija.termini_pregledi.model.Pregled */insert 
+    into
+        pregled (datum_pregleda, doktorid, komentar_pacijenta, ocjena_doktora, pacijentid, status, terminid, vrijeme_pregleda, pregledid) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, default)
+Hibernate: 
+    /* insert for
+        com.medicinska.rezervacija.termini_pregledi.model.Pregled */insert 
+    into
+        pregled (datum_pregleda, doktorid, komentar_pacijenta, ocjena_doktora, pacijentid, status, terminid, vrijeme_pregleda, pregledid) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, default)
+2025-06-20T03:56:24.267+02:00  INFO 34304 --- [termini-pregledi-test] [           main] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    51300 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    48900 nanoseconds spent preparing 1 JDBC statements;
+    1074100 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    242800 nanoseconds spent executing 1 flushes (flushing a total of 1 entities and 0 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+[DataLoader] Kreiran pregled 2: ID=2
+2025-06-20T03:56:24.269+02:00 DEBUG 34304 --- [termini-pregledi-test] [           main] org.hibernate.SQL                        : 
+    select
+        t1_0.terminid,
+        t1_0.datum,
+        t1_0.doktorid,
+        t1_0.status_termina,
+        t1_0.vrijeme,
+        p1_0.terminid,
+        p1_0.pregledid,
+        p1_0.datum_pregleda,
+        p1_0.doktorid,
+        p1_0.komentar_pacijenta,
+        p1_0.ocjena_doktora,
+        p1_0.pacijentid,
+        p1_0.status,
+        p1_0.vrijeme_pregleda 
+    from
+        termin t1_0 
+    left join
+        pregled p1_0 
+            on t1_0.terminid=p1_0.terminid 
+    where
+        t1_0.terminid=?
+Hibernate: 
+    select
+        t1_0.terminid,
+        t1_0.datum,
+        t1_0.doktorid,
+        t1_0.status_termina,
+        t1_0.vrijeme,
+        p1_0.terminid,
+        p1_0.pregledid,
+        p1_0.datum_pregleda,
+        p1_0.doktorid,
+        p1_0.komentar_pacijenta,
+        p1_0.ocjena_doktora,
+        p1_0.pacijentid,
+        p1_0.status,
+        p1_0.vrijeme_pregleda 
+    from
+        termin t1_0 
+    left join
+        pregled p1_0 
+            on t1_0.terminid=p1_0.terminid 
+    where
+        t1_0.terminid=?
+2025-06-20T03:56:24.275+02:00  INFO 34304 --- [termini-pregledi-test] [           main] i.StatisticalLoggingSessionEventListener : Session Metrics {
+    32600 nanoseconds spent acquiring 1 JDBC connections;
+    0 nanoseconds spent releasing 0 JDBC connections;
+    71000 nanoseconds spent preparing 1 JDBC statements;
+    524800 nanoseconds spent executing 1 JDBC statements;
+    0 nanoseconds spent executing 0 JDBC batches;
+    0 nanoseconds spent performing 0 L2C puts;
+    0 nanoseconds spent performing 0 L2C hits;
+    0 nanoseconds spent performing 0 L2C misses;
+    808000 nanoseconds spent executing 1 flushes (flushing a total of 2 entities and 1 collections);
+    0 nanoseconds spent executing 0 partial-flushes (flushing a total of 0 entities and 0 collections)
+}
+[DataLoader] Termin 2 ažuriran: Status = DOSTUPAN
+[DataLoader] Završena inicijalizacija baze podataka za Termini-Pregledi servis.
+]]></system-out>
+    <system-err><![CDATA[WARNING: A Java agent has been loaded dynamically (C:\Users\Adna\.m2\repository\net\bytebuddy\byte-buddy-agent\1.14.13\byte-buddy-agent-1.14.13.jar)
+WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
+WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
+WARNING: Dynamic loading of agents will be disallowed by default in a future release
+]]></system-err>
+  </testcase>
+</testsuite>
