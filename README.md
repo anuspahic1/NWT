@@ -1,136 +1,84 @@
-WinxCare - Sistem za rezervaciju medicinskih pregleda
-Uvod
-WinxCare je moderni sistem za rezervaciju medicinskih pregleda razvijen kao distribuirana aplikacija bazirana na mikroservisnoj arhitekturi. Cilj projekta je omogućiti pacijentima da lako i brzo zakazuju termine kod doktora putem interneta, dok doktorima pruža alate za upravljanje dostupnošću i komunikaciju s pacijentima. Sistem značajno smanjuje administrativne zadatke i poboljšava organizaciju zdravstvenih usluga.
+# WinxCare - Sistem za rezervaciju medicinskih pregleda
 
-Osnovne Funkcionalnosti
-Sistem WinxCare pruža sljedeće ključne funkcionalnosti:
+## Uvod
 
-Pretraga doktora: Pacijenti mogu pretraživati doktore po specijalizaciji, gradu ili dostupnosti termina.
+WinxCare je moderni sistem za rezervaciju medicinskih pregleda razvijen kao distribuirana aplikacija bazirana na mikroservisnoj arhitekturi.  
+Cilj projekta je omogućiti pacijentima da lako i brzo zakazuju termine kod doktora putem interneta, dok doktorima pruža alate za upravljanje dostupnošću i komunikaciju s pacijentima.  
+Sistem značajno smanjuje administrativne zadatke i poboljšava organizaciju zdravstvenih usluga.
 
-Pregled profila doktora: Detaljan prikaz informacija o doktoru, uključujući specijalizaciju, radno vrijeme, iskustvo i ocjene.
+## Osnovne funkcionalnosti
 
-Zakazivanje pregleda: Jednostavan proces rezervacije dostupnih termina.
+Sistem WinxCare omogućava sljedeće ključne funkcionalnosti:
 
-Pregled zakazanih pregleda: Doktori mogu vidjeti svoje rasporede, a pacijenti svoje nadolazeće i prošle preglede.
+- Pretraga doktora po specijalizaciji, gradu ili dostupnosti termina
+- Pregled profila doktora (specijalizacija, iskustvo, radno vrijeme, ocjene)
+- Zakazivanje pregleda kroz jednostavan proces rezervacije termina
+- Pregled zakazanih pregleda za pacijente i doktore
+- Upravljanje terminima: otkazivanje, promjena termina, ažuriranje dostupnosti
+- Slanje notifikacija putem e-maila ili SMS-a (potvrde, podsjetnici, obavijesti o izmjenama)
+- Ocjenjivanje doktora (komentari i ocjene nakon pregleda)
+- Pregled historije pregleda pacijenta
+- Filtriranje pregleda po datumu i specijalizaciji
+- Upravljanje medicinskom dokumentacijom (čuvanje, pregled, pristup izvještajima)
 
-Upravljanje terminima: Otkazivanje i promjena termina od strane pacijenata, te ažuriranje dostupnosti od strane doktora.
+## Arhitektura
 
-Slanje notifikacija: Potvrde rezervacije, podsjetnici i obavijesti o promjenama termina putem e-pošte/SMS-a.
+WinxCare koristi mikroservisnu arhitekturu radi modularnosti, skalabilnosti i lakšeg održavanja.
 
-Ocjenjivanje doktora: Pacijenti mogu ostaviti ocjene i komentare nakon pregleda.
+Tehnologije:
 
-Pregled historije pregleda: Pristup svim prethodnim pregledima pacijenta.
+- Spring Boot (za razvoj mikroservisa)
+- Spring Cloud Gateway (API Gateway)
+- RabbitMQ (za komunikaciju između servisa)
+- JWT (za autentifikaciju korisnika)
 
-Filtriranje pregleda: Mogućnost sužavanja pretrage po specijalizaciji ili datumu.
+## Mikroservisi
 
-Upravljanje medicinskom dokumentacijom: Čuvanje, pregled i upravljanje pristupom medicinskim izvještajima i rezultatima.
+### Auth Service (LOGIN-REGISTRACIJA-APLIKACIJA)
 
-Arhitektura
-WinxCare je izgrađen na principima mikroservisne arhitekture, što omogućava modularnost, skalabilnost i nezavisno postavljanje komponenti. Korišten je Spring Boot za razvoj mikroservisa i Spring Cloud Gateway kao API Gateway.
+- Autentifikacija korisnika (login, registracija, reset lozinke)
+- Generisanje i validacija JWT tokena
 
-Mikroservisi
-Projekt se sastoji od sljedećih ključnih mikroservisa:
+### Mikroservis Korisnici i Doktori (KORISNICI-DOKTORI)
 
-Auth Service (LOGIN-REGISTRACIJA-APLIKACIJA): Odgovoran za autentifikaciju korisnika (login, registracija, reset lozinke) i generisanje JWT tokena.
+- Upravljanje profilima doktora i pacijenata
+- Specijalizacije i ocjenjivanje doktora
+- Medicinska historija pacijenata
 
-Mikroservis Korisnici i Doktori (KORISNICI-DOKTORI): Upravlja podacima o doktorima (profili, specijalizacije, ocjene) i pacijentima (lični podaci, medicinska historija).
+### Mikroservis Termini i Pregledi (TERMINI-PREGLEDI)
 
-Mikroservis Termini i Pregledi (TERMINI-PREGLEDI): Zadužen za kreiranje, upravljanje i praćenje termina i pregleda. Koordinira Saga transakcije za zakazivanje pregleda.
+- Kreiranje, upravljanje i praćenje termina i pregleda
+- Saga transakcije za rezervacije termina
 
-Mikroservis Obavijesti i Dokumentacija (OBAVIJESTI-DOKUMENTACIJA): Upravlja slanjem notifikacija, sigurnim porukama i pohranjivanjem/dohvaćanjem medicinske dokumentacije.
+### Mikroservis Obavijesti i Dokumentacija (OBAVIJESTI-DOKUMENTACIJA)
 
-API Gateway: Centralna ulazna tačka za sve eksterne zahtjeve, odgovoran za rutiranje, autentifikaciju i grubu autorizaciju.
+- Slanje notifikacija (e-mail/SMS)
+- Upravljanje medicinskom dokumentacijom
 
-Postavljanje i Pokretanje
-Da biste postavili i pokrenuli aplikaciju, slijedite ove korake:
+### API Gateway
 
-Preduslovi
-Prije početka, osigurajte da imate instalirano sljedeće:
+- Centralna ulazna tačka za sve zahtjeve
+- Rutiranje prema odgovarajućim mikroservisima
+- Osnovna autentifikacija i autorizacija
 
-Java Development Kit (JDK) 17+
+## Postavljanje i pokretanje
 
-Maven (za izgradnju projekta)
+### Preduslovi
 
-Docker (opcionalno, za lakše pokretanje servisa)
+Prije pokretanja aplikacije potrebno je imati instalirano:
 
-Docker Compose (opcionalno, za orkestraciju servisa)
+- Java Development Kit (JDK) 21+
+- Maven
+- Docker (opcionalno)
+- Docker Compose (opcionalno)
+- RabbitMQ
+- Eureka Server (ako se koristi za Service Discovery)
+- Odvojene baze podataka za svaki mikroservis
 
-RabbitMQ (za Message Broker)
+## Kontakt
 
-Eureka Server (za Service Discovery - ako se koristi, ili individualni servisi moraju znati adrese jedni drugih)
+Za sva pitanja ili podršku, kontaktirajte članove tima:
 
-Baze podataka: Svaki mikroservis koristi svoju bazu podataka.
-
-Koraci za Pokretanje
-Pokrenite RabbitMQ Server:
-
-Ako ste instalirali direktno na OS, osigurajte da je RabbitMQ servis pokrenut (npr. sudo systemctl start rabbitmq-server na Linuxu, ili kroz Windows Services).
-
-Provjerite RabbitMQ Management UI na http://localhost:15672 (default username/password: guest/guest).
-
-Pokrenite Eureka Server (ako se koristi):
-
-Navigirajte do direktorija vašeg Eureka Server projekta.
-
-Izgradite ga koristeći Maven:
-
-mvn clean install
-
-Pokrenite ga:
-
-mvn spring-boot:run
-
-Provjerite Eureka Dashboard, obično na http://localhost:8761.
-
-Pokrenite Backend Mikroservise:
-
-Za svaki od sljedećih mikroservisa: korisnici-doktori, termini-pregledi, obavijesti-dokumentacija, auth:
-
-Navigirajte do njegovog root direktorija.
-
-Izgradite ga koristeći Maven:
-
-mvn clean install
-
-Pokrenite ga:
-
-mvn spring-boot:run
-
-Osigurajte da su svi mikroservisi pravilno konfigurirani za povezivanje sa svojim bazama podataka i RabbitMQ-om.
-
-Pokrenite API Gateway:
-
-Navigirajte do direktorija vašeg API Gateway projekta.
-
-Izgradite ga:
-
-mvn clean install
-
-Pokrenite ga:
-
-mvn spring-boot:run
-
-API Gateway će slušati na portu 8081.
-
-Pokrenite Frontend Aplikaciju (React):
-
-Navigirajte do root direktorija vaše React aplikacije.
-
-Instalirajte zavisnosti:
-
-npm install
-
-Pokrenite aplikaciju:
-
-npm start
-
-Frontend će se obično otvoriti u vašem pregledniku na http://localhost:3000.
-
-Kontakt
-Za sva pitanja ili podršku, slobodno kontaktirajte članove tima:
-
-Dženana Selimović
-
-Adna Nuspahić
-
-Ilma Džaferović
+- **Adna Nuspahić** 
+- **Dženana Selimović**   
+- **Ilma Džaferović**  
