@@ -1,0 +1,59 @@
+# C:/Users/Adna/Downloads/config-repo/obavijesti-dokumentacija-dev.yml
+# Ostavljamo samo konfiguraciju specifičnu za aplikaciju i profil
+# koja je NAMJENJENA da je Config Server isporuči.
+
+spring:
+  # Ovdje su samo postavke specifične za bazu podataka
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: password123
+    url: jdbc:mysql://mysql-obavijesti-dokumentacija:3306/mikroservis_tri?createDatabaseIfNotExist=TRUE&useSSL=FALSE&allowPublicKeyRetrieval=TRUE&serverTimezone=UTC
+    hikari:
+      maximum-pool-size: 10
+      connection-timeout: 30000
+      idle-timeout: 600000
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+        use_sql_comments: true
+        dialect: org.hibernate.dialect.MySQLDialect
+        generate_statistics: true
+        type:
+          descriptor:
+            sql: TRACE
+            sql.BasicBinder: TRACE
+
+  rabbitmq:
+    host: rabbitmq
+    port: 5672
+    username: guest
+    password: guest
+
+# Postavke logovanja (mogu varirati po okruženjima)
+logging:
+  level:
+    org:
+      hibernate:
+        SQL: DEBUG
+        stat: DEBUG
+      springframework:
+        web: DEBUG
+        security: DEBUG
+    springdoc: DEBUG
+
+# Custom aplikacijske postavke (mogu varirati po okruženjima)
+app:
+  welcome-message: Welcome Developer! You are in DEVELOPMENT mode for Obavijesti-Dokumentacija!
+
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
+  api-docs:
+    enabled: true
+    path: /v3/api-docs

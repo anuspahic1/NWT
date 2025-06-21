@@ -1,0 +1,65 @@
+# C:/Users/Adna/Downloads/config-repo/termini-pregledi-dev.yml
+# Ostavljamo samo konfiguraciju specifičnu za aplikaciju i profil
+# koja je NAMJENJENA da je Config Server isporuči.
+
+spring:
+  # Ovdje su samo postavke specifične za bazu podataka i RabbitMQ
+  # koje želite da Config Server isporučuje
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: password123
+    hikari:
+      maximum-pool-size: 10
+      connection-timeout: 30000
+      idle-timeout: 600000
+    url: jdbc:mysql://mysql-termini-pregledi:3306/PreglediTermini?createDatabaseIfNotExist=TRUE&useSSL=FALSE&allowPublicKeyRetrieval=TRUE&serverTimezone=UTC
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+        use_sql_comments: true
+        dialect: org.hibernate.dialect.MySQLDialect
+        generate_statistics: true
+        type:
+          descriptor:
+            sql: TRACE
+            sql.BasicBinder: TRACE
+
+  rabbitmq:
+    host: rabbitmq
+    port: 5672
+    username: guest
+    password: guest
+
+# Postavke logovanja su dobre ovdje, jer mogu varirati po okruženjima
+logging:
+  level:
+    org:
+      hibernate:
+        SQL: DEBUG
+        stat: DEBUG
+      springframework:
+        web: DEBUG
+        security: DEBUG
+    springdoc: DEBUG
+
+# Custom aplikacijske postavke su također dobre ovdje
+app:
+  welcome-message: Welcome Developer! You are in DEVELOPMENT mode for Termini-Pregledi!
+  termin:
+    max-termini-per-day: 10
+
+springdoc:
+  swagger-ui:
+    path: /swagger-ui.html
+  api-docs:
+    enabled: true
+    path: /v3/api-docs
+
+# SVE OSTALO JE UKLONJENO IZ OVOG FAJLA JER PRIPADA U bootstrap.yml ili application.yml
+# (npr. spring.application.name, eureka.*, server.*, management.*)

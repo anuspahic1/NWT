@@ -1,0 +1,50 @@
+syntax = "proto3";
+
+package events;
+
+import "google/protobuf/timestamp.proto";
+
+option java_multiple_files = true;
+option java_package = "com.system_events.grpc";
+option java_outer_classname = "SystemEventsProto";
+
+
+// Enum za tip akcije
+enum ActionType {
+  ACTION_TYPE_UNSPECIFIED = 0;
+  CREATE = 1;
+  GET = 2;
+  UPDATE = 3;
+  DELETE = 4;
+}
+
+// Enum za status odgovora
+enum ResponseStatus {
+  RESPONSE_STATUS_UNSPECIFIED = 0;
+  SUCCESS = 1;
+  ERROR = 2;
+}
+
+// Poruka koja predstavlja sistemski događaj
+message SystemEvent {
+  google.protobuf.Timestamp timestamp = 1;
+  string microservice_name = 2;
+  string user_id = 3;
+  ActionType action_type = 4;
+  string resource_name = 5;
+  string resource_identifier = 6; // ID ili jedinstveni identifikator resursa
+  ResponseStatus response_status = 7;
+  string error_message = 8;
+  map<string, string> additional_info = 9;
+}
+
+// Poruka odgovora za LogEvent
+message LogEventResponse {
+  bool success = 1;
+  string message = 2;
+}
+
+// Servis za logovanje događaja
+service EventLoggingService {
+  rpc LogEvent(SystemEvent) returns (LogEventResponse);
+}

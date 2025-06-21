@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: termini-pregledi 
+                           
+                           
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: password123 
+    hikari:
+      maximum-pool-size: 10
+      connection-timeout: 30000
+      idle-timeout: 600000
+    url: jdbc:mysql://mysql-termini-pregledi:3306/PreglediTermini?createDatabaseIfNotExist=TRUE&useSSL=FALSE&allowPublicKeyRetrieval=TRUE&serverTimezone=UTC
+
+app:
+  welcome-message: Dobrodošli u servis za termine i preglede!

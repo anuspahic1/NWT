@@ -1,0 +1,92 @@
+spring:
+  application:
+    name: obavijesti-dokumentacija 
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: password123 
+    hikari:
+      maximum-pool-size: 10
+      connection-timeout: 30000
+      idle-timeout: 600000
+    url: jdbc:mysql://mysql-obavijesti-dokumentacija:3306/mikroservis_tri?createDatabaseIfNotExist=TRUE&useSSL=FALSE&allowPublicKeyRetrieval=TRUE&serverTimezone=UTC
+
+  jpa:
+    database-platform: org.hibernate.dialect.MySQL8Dialect # Ostaje kao u tvom originalnom fajlu
+    hibernate:
+      ddl-auto: update 
+      show-sql: true
+      properties:
+        hibernate:
+          format_sql: true
+          use_sql_comments: true
+          dialect: org.hibernate.dialect.MySQLDialect 
+          generate_statistics: true
+          default_batch_fetch_size: 20
+          enable_lazy_load_no_trans: true 
+
+  rabbitmq:
+    host: rabbitmq 
+    port: 5672
+    username: guest
+    password: guest
+
+  cloud:
+    loadbalancer:
+      ribbon:
+        enabled: false 
+
+server:
+  port: 8084
+  servlet:
+    context-path: /obavijesti-dokumentacija
+
+springdoc:
+  api-docs:
+    enabled: true
+    path: /v3/api-docs
+  swagger-ui:
+    enabled: true
+    path: /swagger-ui.html
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,metrics
+  endpoint:
+    health:
+      show-details: always
+    metrics:
+      enabled: true
+
+logging:
+  level:
+    org:
+      hibernate:
+        SQL: DEBUG
+        type:
+          descriptor:
+            sql: TRACE
+            sql.BasicBinder: TRACE
+        stat: DEBUG
+      springframework:
+        web: DEBUG
+        security: DEBUG
+    springdoc: DEBUG
+
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://eureka-server:8761/eureka/ 
+    healthcheck:
+      enabled: true
+  instance:
+    prefer-ip-address: true # Ostavljeno kao u tvom dev fajlu
+    lease-renewal-interval-in-seconds: 30
+    lease-expiration-duration-in-seconds: 90
+
+app:
+  welcome-message: Dobrodošli u servis za obavijesti i dokumentaciju!

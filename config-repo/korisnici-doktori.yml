@@ -1,0 +1,86 @@
+
+
+app:
+  welcome-message: Dobrodošli u servis za korisnike i doktore!
+server:
+  port: 8080 
+  servlet:
+    context-path: /korisnici-doktori 
+
+spring:
+  application:
+    name: korisnici-doktori 
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: password123 
+    hikari:
+      maximum-pool-size: 10
+      connection-timeout: 30000
+      idle-timeout: 600000
+    url: jdbc:mysql://mysql-korisnici-doktori:3306/korisnici_doktori?createDatabaseIfNotExist=TRUE&useSSL=FALSE&allowPublicKeyRetrieval=TRUE&serverTimezone=UTC
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect
+        format_sql: true
+        use_sql_comments: true
+        generate_statistics: true
+        default_batch_fetch_size: 20 
+        enable_lazy_load_no_trans: true 
+
+  cloud:
+    loadbalancer:
+      ribbon:
+        enabled: false 
+
+eureka:
+  client:
+    register-with-eureka: true
+    fetch-registry: true
+    service-url:
+      defaultZone: http://eureka-server:8761/eureka/ 
+    healthcheck:
+      enabled: true
+  instance:
+    prefer-ip-address: true 
+    lease-renewal-interval-in-seconds: 30
+    lease-expiration-duration-in-seconds: 90
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,metrics
+  endpoint:
+    health:
+      show-details: always
+    metrics:
+      enabled: true
+
+springdoc:
+  api-docs:
+    enabled: true
+    path: /v3/api-docs
+  swagger-ui:
+    enabled: true
+    path: /swagger-ui.html
+
+logging:
+  level:
+    org:
+      hibernate:
+        SQL: DEBUG
+        type:
+          descriptor:
+            sql: TRACE
+            sql.BasicBinder: TRACE
+        stat: DEBUG
+      springframework:
+        web: DEBUG
+        security: DEBUG
+      springdoc: DEBUG

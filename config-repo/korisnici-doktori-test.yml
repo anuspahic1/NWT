@@ -1,0 +1,85 @@
+
+spring:
+  application:
+    name: korisnici-doktori 
+  datasource:
+    url: jdbc:mysql://mysql-korisnici-doktori:3306/korisnici_doktori?createDatabaseIfNotExist=TRUE&useSSL=FALSE&allowPublicKeyRetrieval=TRUE&serverTimezone=UTC
+    username: root
+    password: password123 
+    driver-class-name: com.mysql.cj.jdbc.Driver 
+    hikari: 
+      maximum-pool-size: 10
+      connection-timeout: 30000
+      idle-timeout: 600000
+
+  jpa: 
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+        use_sql_comments: true
+        dialect: org.hibernate.dialect.MySQLDialect
+        generate_statistics: true
+        default_batch_fetch_size: 20
+        enable_lazy_load_no_trans: true
+
+  cloud: 
+    loadbalancer:
+      ribbon:
+        enabled: false 
+    eureka: 
+      client:
+        register-with-eureka: true
+        fetch-registry: true
+        service-url:
+          defaultZone: http://eureka-server:8761/eureka/ 
+        healthcheck:
+          enabled: true
+      instance:
+        prefer-ip-address: true 
+        lease-renewal-interval-in-seconds: 30
+        lease-expiration-duration-in-seconds: 90
+
+server:
+  port: 8080 
+  servlet:
+    context-path: /korisnici-doktori 
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,metrics
+  endpoint:
+    health:
+      show-details: always
+    metrics:
+      enabled: true
+
+springdoc:
+  api-docs:
+    enabled: true
+    path: /v3/api-docs
+  swagger-ui:
+    enabled: true
+    path: /swagger-ui.html
+
+logging:
+  level:
+    org:
+      hibernate:
+        SQL: DEBUG
+        type:
+          descriptor:
+            sql: TRACE
+            sql.BasicBinder: TRACE
+        stat: DEBUG
+      springframework:
+        web: DEBUG
+        security: DEBUG
+    springdoc: DEBUG
+
+app:
+  welcome-message: Testing in progress! This is the TEST environment!

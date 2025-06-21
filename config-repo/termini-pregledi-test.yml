@@ -1,0 +1,75 @@
+spring:
+  application:
+    name: termini-pregledi 
+  datasource:
+    url: jdbc:mysql://mysql-termini-pregledi:3306/PreglediTermini?createDatabaseIfNotExist=TRUE&useSSL=FALSE&allowPublicKeyRetrieval=TRUE&serverTimezone=UTC
+    username: root
+    password: password123 
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  eureka:
+    client:
+      register-with-eureka: true
+      fetch-registry: true
+      service-url:
+        defaultZone: http://eureka-server:8761/eureka/ 
+      healthcheck:
+        enabled: true
+    instance:
+      prefer-ip-address: true 
+      lease-renewal-interval-in-seconds: 30
+      lease-expiration-duration-in-seconds: 90
+
+  rabbitmq:
+    host: rabbitmq 
+    port: 5672
+    username: guest
+    password: guest
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*" 
+  endpoint:
+    health:
+      show-details: always
+    metrics:
+      enabled: true
+
+spring: 
+  cloud:
+    loadbalancer:
+      ribbon:
+        enabled: false 
+
+server:
+  port: 8083 
+  servlet:
+    context-path: /termini-pregledi
+
+springdoc: 
+  api-docs:
+    enabled: true
+    path: /v3/api-docs
+  swagger-ui:
+    enabled: true
+    path: /swagger-ui.html
+
+logging: 
+  level:
+    org:
+      hibernate:
+        SQL: DEBUG
+        type:
+          descriptor:
+            sql: TRACE
+            sql.BasicBinder: TRACE
+        stat: DEBUG
+      springframework:
+        web: DEBUG
+        security: DEBUG
+    springdoc: DEBUG
+
+app:
+  welcome-message: Testing in progress! This is the TEST environment for Termini-Pregledi!

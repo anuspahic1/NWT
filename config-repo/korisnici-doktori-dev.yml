@@ -1,0 +1,50 @@
+# C:/Users/Adna/Downloads/config-repo/korisnici-doktori-dev.yml
+# Ostavljamo samo konfiguraciju specifičnu za aplikaciju i profil
+# koja je NAMJENJENA da je Config Server isporuči.
+
+spring:
+  # Ovdje su samo postavke specifične za bazu podataka
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: password123
+    hikari:
+      maximum-pool-size: 10
+      connection-timeout: 30000
+      idle-timeout: 600000
+    url: jdbc:mysql://mysql-korisnici-doktori:3306/korisnici_doktori?createDatabaseIfNotExist=TRUE&useSSL=FALSE&allowPublicKeyRetrieval=TRUE&serverTimezone=UTC
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+        use_sql_comments: true
+        dialect: org.hibernate.dialect.MySQLDialect
+        generate_statistics: true
+        default_batch_fetch_size: 20
+        enable_lazy_load_no_trans: true # PAŽNJA: ovo može izazvati N+1 problem ako se ne koristi pažljivo
+        type:
+          descriptor:
+            sql: TRACE
+            sql.BasicBinder: TRACE
+
+# Postavke logovanja (mogu varirati po okruženjima)
+logging:
+  level:
+    org:
+      hibernate:
+        SQL: DEBUG
+        type.descriptor.sql: TRACE
+        type.descriptor.sql.BasicBinder: TRACE
+        stat: DEBUG
+      springframework:
+        web: DEBUG
+        security: DEBUG
+    springdoc: DEBUG # Ovo je malo čudno da je ovdje, ali nije kritično
+
+# Custom aplikacijske postavke (mogu varirati po okruženjima)
+app:
+  welcome-message: Welcome Developer! You are in DEVELOPMENT mode!
